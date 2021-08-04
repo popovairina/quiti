@@ -1,3 +1,7 @@
 @import "../mixins/font-face";
-//@include font-face("Family", "../fonts/Family/Family-Regular", 400);
-//@include font-face("Family", "../fonts/Family/Family-Bold", 700);
+@include font-face("Inter", "../fonts/Inter/Inter-Regular", 400);
+@include font-face("Inter", "../fonts/Inter/Inter-SemiBold", 600);
+@include font-face("Inter", "../fonts/Inter/Inter-Bold", 700);
+
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Bold", 700);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-ExtraBold", 800);

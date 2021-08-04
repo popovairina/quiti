@@ -11,6 +11,86 @@
 </head>
 <body>
 @@include('../blocks/header/header.html')
+@@include('../blocks/hero/hero-home.html')
+
+<section class="bg-light section">
+  <div class="container">
+
+    <div class="card-service">
+      <div class="card-service__body">
+        <h4 class="card-service__category">Услуга</h4>
+        <h2 class="card-service__title">Сопровождение детей</h2>
+        <div class="card-service__desc">Quiti - безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий. Сопровождаем детей, пока родители обеспечивают их будущее!</div>
+        <div class="card-service__btn-wrap">
+          <button class="btn">оставить заявку</button>
+          <a href="#" class="link-arrow">Подробнее</a>
+        </div>
+      </div>
+      <div class="card-service__img">
+        <img src="./img/services/service-1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="calc-offer tac">
+      <div class="calc-offer__title section-title">Калькулятор</div>
+      <div class="calc-offer__text text-26">Наш калькулятор поможет рассчитать приблизительную стоимость поездки</div>
+      <a href="#" class="btn btn-o">Рассчитать</a>
+    </div>
+
+    <div class="card-service">
+      <div class="card-service__img">
+        <img src="./img/services/service-2.jpg" alt="">
+      </div>
+      <div class="card-service__body">
+        <h4 class="card-service__category">Услуга</h4>
+        <h2 class="card-service__title">Подбор бебиситтеров</h2>
+        <div class="card-service__desc">Безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий</div>
+        <div class="card-service__btn-wrap">
+          <button class="btn">оставить заявку</button>
+          <a href="#" class="link-arrow">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-service">
+      <div class="card-service__body">
+        <h4 class="card-service__category">Услуга</h4>
+        <h2 class="card-service__title">Групповые поездки</h2>
+        <div class="card-service__desc">Безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий</div>
+        <div class="card-service__btn-wrap">
+          <button class="btn">оставить заявку</button>
+          <a href="#" class="link-arrow">Подробнее</a>
+        </div>
+      </div>
+      <div class="card-service__img">
+        <img src="./img/services/service-3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="card-service">
+      <div class="card-service__img">
+        <img src="./img/services/service-4.jpg" alt="">
+      </div>
+      <div class="card-service__body">
+        <h4 class="card-service__category">Услуга</h4>
+        <h2 class="card-service__title">Детская выездная фотостудия</h2>
+        <div class="card-service__desc">Безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий</div>
+        <div class="card-service__btn-wrap">
+          <button class="btn">оставить заявку</button>
+          <a href="#" class="link-arrow">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+
+    @@include('../blocks/features/features.html', {
+      "class": "features_home"
+    })
+
+  </div>
+</section>
+
+
 @@include('../blocks/footer/footer.html')
 
 <script src="js/vendor.js"></script>

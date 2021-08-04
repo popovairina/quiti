@@ -4,6 +4,10 @@
     font-family: $font-family;
     font-style: $style;
     font-display: swap;
-    src: local($font-family), url("#{$file-path}.woff2") format("woff2"), url("#{$file-path}.woff") format("woff");
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+        url('#{$file-path}.woff2') format('woff2'),
+        url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.svg##{$file-path}') format('svg');
   }
 }

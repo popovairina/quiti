@@ -1,0 +1,54 @@
+.card-service {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 385px;
+    margin-bottom: 28px;
+    &__body {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 42px 27px 22px;
+    }
+    &__category {
+        margin-bottom: 10px;
+        font-family: $reg;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $gray;
+    }
+    &__title {
+        margin-bottom: 20px;
+        max-width: 400px;
+    }
+    &__desc {
+        max-width: 405px;
+        font-family: $reg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.3;
+        color: $dark-gray;
+    }
+    &__btn-wrap {
+        margin-top: auto;
+        .btn {
+            margin-right: 20px;
+        }
+    }
+    &__img {
+        width: 50%;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

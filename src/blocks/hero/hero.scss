@@ -1,0 +1,47 @@
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &_home {
+        padding: 168px 0 150px;
+        @media screen and (max-width: 768px) {
+            padding: 100px 0;
+        }
+        @media screen and (max-width: 768px) {
+            padding-bottom: 60px;
+        }
+    }
+    &__subtitle {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__title {
+        max-width: 984px;
+        margin: 0 auto 41px;
+        text-align: center;
+        @media (max-width: 1199px) {
+            max-width: 784px;
+        }
+    }
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+        .btn:not(:last-child) {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .btn {
+                width: 45%;
+                margin-bottom: 20px;
+                margin-right: 0 !important;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            .btn {
+                width: 80%;
+            }
+        }
+    }
+}

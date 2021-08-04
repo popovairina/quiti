@@ -1,0 +1,31 @@
+.features {
+    &_home {
+        padding: 41px 0 18px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        padding: 33px 20px 24px;
+        text-align: center;
+        width: 19.3%;
+        max-width: 220px;
+        margin-bottom: 15px;
+    }
+    &__icon {
+        margin: 0 auto 20px;
+    }
+    &__desc {
+        font-family: $reg;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $dark-gray;
+    }
+}
