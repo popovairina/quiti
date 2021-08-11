@@ -1,0 +1,30 @@
+.charity {
+    padding: 50px 0;
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__logo {
+        flex-shrink: 0;
+        margin-right: 70px;
+    }
+    &__body {
+        flex-grow: 1;
+    }
+    &__subtitle {
+        max-width: 300px;
+        margin-bottom: 12px;
+        font-family: $reg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-gray;
+    }
+    &__title {
+        margin-bottom: 41px;
+    }
+    &__btn {
+        margin-right: 53px;
+    }
+}

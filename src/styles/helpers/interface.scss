@@ -106,3 +106,22 @@
         bottom: -7px;
     }
 }
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-bullet {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #797979;
+        border-radius: 50%;
+        margin: 0 16px;
+        &-active {
+            width: 14px;
+            height: 14px;
+            background: #E8ACB9;
+            border-color: #E8ACB9;
+        }
+    }
+}
