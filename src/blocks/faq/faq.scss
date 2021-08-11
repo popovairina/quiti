@@ -1,0 +1,60 @@
+.faq {
+    padding: 70px 0 95px;
+    &__title {
+        margin-bottom: 54px;
+    }
+    &__acc {
+        margin-bottom: 54px;
+    }
+}
+
+.faq-acc {
+    border-bottom: 1px solid #C4C4C4;
+    &__button {
+        position: relative;
+        padding: 30px 60px 30px 0;
+        border-top: 1px solid #C4C4C4;
+        font-family: $reg;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.3;
+        color: #3C3C3C;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            background-color: $bg-light;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 32px;
+            height: 18px;
+            top: calc(50% - 9px);
+            right: 16px;
+            cursor: pointer;
+            transition: all .3s ease;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("data:image/svg+xml,%3Csvg width='32' height='18' viewBox='0 0 32 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31 1.5L16 16.5L1 1.5' stroke='%2336BCBB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+    &__content {
+        overflow: hidden;
+        padding-bottom: 0;
+        max-width: 944px;
+        font-family: $reg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3C3C3C;
+        transition: all .5s ease;
+    }
+    &__item[data-open] {
+        padding-bottom: 30px;
+        .faq-acc__button:after {
+            transform: rotate(180deg);
+        }
+    }
+}

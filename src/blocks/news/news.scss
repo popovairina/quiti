@@ -1,0 +1,14 @@
+.news {
+    padding: 74px 0 94px;
+    &__title {
+        margin-bottom: 53px;
+    }
+    &__wrap {
+        display: flex;
+        margin: 0 -16px 70px;
+    }
+    &__card {
+        width: calc(100% / 3 - 32px);
+        margin: 0 16px;
+    }
+}
