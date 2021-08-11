@@ -4,10 +4,10 @@
     background-position: center;
     &_home {
         padding: 168px 0 150px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
             padding: 100px 0;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding-bottom: 60px;
         }
     }

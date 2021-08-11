@@ -7,4 +7,17 @@
         max-width: 800px;
         margin: 0 auto 30px;
     }
+    &_decor {
+        position: relative;
+        .decor-star-rose {
+            position: absolute;
+            top: 15px;
+            left: calc(50% - 510px);
+        }
+        .decor-light-yellow {
+            position: absolute;
+            bottom: 84px;
+            right: calc(50% - 474px);
+        }
+    }
 }
