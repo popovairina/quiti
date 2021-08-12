@@ -1,1 +1,74 @@
-// code here
+.footer {
+    background-color: $graphite;
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 27px;
+        border-bottom: 0.5px solid rgba(#fff, .5);
+    }
+    &__privacy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 21px;
+    }
+    &__col {
+        width: 25%;
+        max-width: 254px;
+    }
+    &__nav {
+        ul {
+            li {
+                display: block;
+                margin-bottom: 11px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    font-family: $reg;
+                    
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    &:hover {
+                      color: $accent;
+                    }
+                }
+            }
+        }
+    }
+    &__text {
+        font-size: 14px;
+    }
+}
+.footer-contacts {
+    min-height: 72px;
+    margin-bottom: 23px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__heading {
+        margin-bottom: 10px;
+        font-family: $reg;
+        font-size: 14px;
+        line-height: 17px;
+        color: #AAAAAA;
+    }
+    &__link {
+        margin-right: 20px;
+        font-family: $reg;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    &__small {
+        margin-top: 10px;
+        font-family: $reg;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+}
