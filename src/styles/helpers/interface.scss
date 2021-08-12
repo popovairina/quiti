@@ -7,7 +7,7 @@
     padding: 20px 30px;
 
     font-family: $reg;
-    font-style: normal;
+    
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
@@ -57,7 +57,7 @@
     position: relative;
     padding-right: 40px;
     font-family: $reg;
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -84,7 +84,7 @@
 .link {
     position: relative;
     font-family: $reg;
-    font-style: normal;
+    
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
@@ -123,5 +123,16 @@
             background: #E8ACB9;
             border-color: #E8ACB9;
         }
+    }
+}
+
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin: 0 -8px;
+    &__icon {
+        display: block;
+        margin-left: 8px;
     }
 }

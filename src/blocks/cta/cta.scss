@@ -1,0 +1,111 @@
+.cta {
+    padding: 80px 0 105px;
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__title {
+        max-width: 480px;
+        font-family: $add;
+        
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 54px;
+    }
+    &__form-wrap {
+        max-width: 552px;
+        padding-right: 26px;
+        margin-top: -9px;
+    }
+    &__contacts {
+        width: 50%;
+        max-width: 362px;
+    }
+}
+
+.cta-form {
+    &__input {
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #AAAAAA;
+        padding: 10px 0;
+        font-family: $reg;
+        
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.3;
+        color: $dark-gray;
+        outline: none;
+        transition: all .3s ease;
+        &:focus {
+            border-color: $accent;
+        }
+    }
+    &__textarea {
+        height: 84px;
+        resize: none;
+    }
+    &__footer {
+        display: flex;
+        margin-top: 40px;
+    }
+    &__btn {
+        min-width: 235px;
+        margin-right: 40px;
+    }
+    &__agreement {
+        font-family: $reg;
+        
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #737373;
+        a {
+            color: #737373;
+        }
+    }
+}
+
+.cta-contacts {
+    padding-top: 100px;
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__row {
+        margin-bottom: 32px;
+    }
+    &__heading {
+        margin-bottom: 10px;
+        font-family: $reg;
+        
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-gray;
+    }
+    &__link {
+        margin-right: 30px;
+        font-family: $reg;
+        
+        font-weight: bold;
+        font-size: 26px;
+        color: $graphite;
+        text-decoration: none;
+        transition: all .3s ease;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__small {
+        margin-top: 10px;
+        font-family: $reg;
+        
+        font-weight: normal;
+        font-size: 14px;
+        color: $graphite;
+    }
+}
