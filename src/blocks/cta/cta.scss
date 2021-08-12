@@ -7,11 +7,16 @@
     }
     &__title {
         max-width: 480px;
-        font-family: $add;
-        
+        font-family: $add;        
         font-weight: bold;
         font-size: 46px;
         line-height: 54px;
+    }
+    &-title-section {
+        padding: 73px 0;
+        .cta__title {
+            max-width: 800px;
+        }
     }
     &__form-wrap {
         max-width: 552px;
@@ -21,6 +26,13 @@
     &__contacts {
         width: 50%;
         max-width: 362px;
+    }
+}
+
+.cta-partnership {
+    padding: 58px 0 50px;
+    .cta-contacts {
+        padding-top: 8px;
     }
 }
 

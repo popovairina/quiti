@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  @@include('../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/common.css">
+  <title>Профиль бэбиситтера</title>
+</head>
+<body>
+  @@include('../blocks/header/header.html')
+
+  <section class="cta cta-title-section bg-light-gray">
+    <div class="container">
+        <h1 class="cta__title text-navy">Приглашаем в команду заботливого сервиса Quiti водителя-сопровождающего</h1>
+    </div>
+  </section>
+
+  <section class="cta-partnership">
+    <div class="container">
+
+      <div class="cta__wrap">
+        <div class="cta__form-wrap">
+            <form action="" class="cta__form cta-form">
+                <input name="userName" type="text" class="cta-form__input" required placeholder="Имя*">
+                <input name="userPhone" type="tel" class="cta-form__input" required placeholder="Телефон*">
+                <input name="userEmail" type="email" class="cta-form__input" required placeholder="E-mail*">
+                <textarea name="userMessage" class="cta-form__input cta-form__textarea" placeholder="Комментарий"></textarea>
+                <div class="cta-form__footer">
+                    <input type="submit" class="cta-form__btn btn" value="отправить">
+                    <div class="cta-form__agreement">Нажимая кнопку «Отправить заявку», Вы принимаете условия <a href="#">пользовательского соглашения</a></div>
+                </div>
+            </form>
+        </div>
+        <div class="cta__contacts cta-contacts">
+            <div class="cta-contacts__row">
+                <div class="cta-contacts__heading">Телефон</div>
+                <div class="cta-contacts__info">
+                    <a href="tel:+74999623050" class="cta-contacts__link">8 (499) 962-30-50</a>
+                    <div class="cta-contacts__small">пн-пт 9:00-18:00</div>
+                </div>
+            </div>
+            <div class="cta-contacts__row">
+                <div class="cta-contacts__heading">E-mail</div>
+                <div class="cta-contacts__info">
+                    <a href="mailto:info@quiti.ru" class="cta-contacts__link">info@quiti.ru</a>
+                </div>
+            </div>
+            <div class="cta-contacts__row">
+                <div class="cta-contacts__heading">Мессенджеры</div>
+                <div class="cta-contacts__info">
+                    <a href="#" class="cta-contacts__link">WhatsApp</a>
+                    <a href="#" class="cta-contacts__link">Telegram</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../blocks/footer/footer.html')
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
