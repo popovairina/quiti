@@ -11,30 +11,29 @@
 </head>
 <body>
 @@include('../blocks/header/header.html')
-@@include('../blocks/hero/hero-home.html')
-
-<section class="bg-light section">
-  <div class="container">
-    @@include('../blocks/card/card-services.html')
-    
-    @@include('../blocks/features/features.html', {
-      "class": "features_home"
-    })    
-  </div>
-</section>
-
-@@include('../blocks/why-us/why-us.html')
-@@include('../blocks/charity/charity.html')
-@@include('../blocks/feedback/feedback.html')
-@@include('../blocks/news/news-recent.html')
-@@include('../blocks/faq/faq-preview.html')
-
-@@include('../blocks/cta/cta.html', {
-  "heading": "Отправьте заявку и мы расскажем подробно о наших услугах"
-})  
-<!-- @@include('../blocks/cta/cta-contacts.html', {
-  "heading": "Свяжитесь с нами"
-})   -->
+<main>
+  @@include('../blocks/hero/hero-home.html')
+  
+  <section class="bg-light section">
+    <div class="container">
+      @@include('../blocks/card/card-services.html')
+      
+      @@include('../blocks/features/features.html', {
+        "class": "features_home"
+      })    
+    </div>
+  </section>
+  
+  @@include('../blocks/why-us/why-us.html')
+  @@include('../blocks/charity/charity.html')
+  @@include('../blocks/feedback/feedback.html')
+  @@include('../blocks/news/news-recent.html')
+  @@include('../blocks/faq/faq-preview.html')
+  
+  @@include('../blocks/cta/cta.html', {
+    "heading": "Отправьте заявку и мы расскажем подробно о наших услугах"
+  })
+</main>
 
 @@include('../blocks/footer/footer.html')
 

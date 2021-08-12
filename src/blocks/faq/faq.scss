@@ -11,6 +11,13 @@
     }
 }
 
+.faq-main {
+    padding-bottom: 110px;
+    .faq-acc {
+        margin-bottom: 0;
+    }
+}
+
 .faq-acc {
     border-bottom: 1px solid #C4C4C4;
     &__button {
