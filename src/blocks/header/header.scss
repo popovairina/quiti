@@ -20,7 +20,7 @@
                 position: relative;
                 display: inline-block;
                 font-family: $reg;
-                font-style: normal;
+                
                 font-weight: 600;
                 font-size: 16px;
                 color: $dark-gray;
@@ -50,13 +50,5 @@
         margin: 0 35px;
         padding: 14px 20px;
         font-size: 14px;
-    }
-    .socials {
-        display: flex;
-        align-items: center;
-    }
-    .socials__icon {
-        display: block;
-        margin-left: 8px;
     }
 }
