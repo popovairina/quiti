@@ -11,22 +11,21 @@
 <body>
   @@include('../blocks/header/header.html')
 
-  <main class="page pb-0">
-      <div class="container">          
+  <main class="page">
+      <div class="container-video">          
         <h1 class="page-title">Отзывы наших клиентов</h1>
         <div class="filter-tags">
-          <a href="#" class="filter-tag filter-tag_active">
+          <a href="/feedback-video.html" class="filter-tag filter-tag_active">
             <div class="filter-tag__link">Видео-отзывы</div>
           </a>
-          <a href="#" class="filter-tag">
+          <a href="/feedback.html" class="filter-tag">
             <div class="filter-tag__link">Отзывы</div>
           </a>
-        </div>        
+        </div>   
+
+        @@include('../blocks/feedback/feedback-video.html')
+
       </div>
-
-      @@include('../blocks/feedback/feedback-video.html')
-      @@include('../blocks/feedback/feedback-form.html')
-
   </main>
 
 
