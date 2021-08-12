@@ -21,6 +21,14 @@
     padding: 4px 18px 4px 18px;
     margin-top: 15px;
     margin-bottom: 25px;
+    &_big {
+      font-size: 20px;
+      color: $dark-gray;
+      strong {
+        color: $graphite;
+        margin-right: -3px;
+      }
+    }
   }
   &-section {
     background-color: #fff;
@@ -30,19 +38,20 @@
     padding: 35px 30px 50px 30px;
     margin-bottom: 30px;
     &__photo {
-      margin-bottom: 35px;
+      margin-bottom: 29px;
+    }
+    &__btn {
+      min-width: 272px;
+    }
+    &__about {
+      max-width: 734px;
     }
     &__image {
       width: 100%;
     }
     &__name {
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: bold;
       font-size: 26px;
       line-height: 130%;
@@ -50,26 +59,16 @@
       margin-right: 25px;
     }
     &__age {
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: normal;
       font-size: 26px;
       line-height: 130%;
       color: $graphite;
     }
     &__title {
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
@@ -77,32 +76,22 @@
       margin-bottom: 20px;
     }
     p {
-      margin-bottom: 20px;
+      margin-bottom: 23px;
       &:last-child {
         margin-bottom: 0;
       }
     }
     &__text {
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: normal;
       font-size: 18px;
       line-height: 22px;
       color: $dark-gray;
     }
     &__caution {
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: normal;
       font-size: 18px;
       line-height: 22px;
@@ -142,13 +131,7 @@
       }
     }
     &__author {
-<<<<<<< HEAD
       font-family: $reg;
-      font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
@@ -157,13 +140,8 @@
     }
     &__review {
       width: 620px;
-<<<<<<< HEAD
       font-family: $reg;
       font-style: normal;
-=======
-      font-family: Inter;
-      
->>>>>>> 976f4a1bbe92433d8b8f6467b9480eb20ff3b7cf
       font-weight: normal;
       font-size: 16px;
       line-height: 19px;
@@ -173,5 +151,8 @@
       text-align: center;
       margin-top: 50px;
     }
+  }
+  &__cta-btn {
+    min-width: 264px;
   }
 }
