@@ -7,9 +7,6 @@
     &__title {
         margin-bottom: 40px;
     }
-    &__item {
-        //
-    }
     &__content {
         position: relative;
         max-width: 680px;
@@ -79,5 +76,28 @@
         bottom: -70px;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+.feedback-full {
+    &__item {
+        padding: 70px 0 96px;
+        &:nth-child(2n-1) {
+            background-color: $light-gray;
+        }
+    }
+}
+
+.feedback-form {
+    background-color: $navy;
+    .cta__title, .cta-form__agreement, .cta-form__agreement a {
+        color: #fff;
+    }
+    .cta-form__input {
+        color: #fff;
+        border-color: #fff !important;
+        &::placeholder {
+            color: #fff;
+        }
     }
 }

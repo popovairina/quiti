@@ -30,6 +30,16 @@
     }
 }
 
+.btn-blue {
+    color: $navy;
+    background-color: #fff;
+    border-color: #fff;
+    &:hover {
+        background-color: transparent;
+        color: $white;
+    }
+}
+
 .btn-o {
     font-weight: 500;
     color: $graphite;

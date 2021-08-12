@@ -1,0 +1,33 @@
+.filter {
+  &-tags {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 72px;
+  }
+  &-tag {
+    background-color: $white;
+    border: 1px solid $dark-gray;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: $reg;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 19px;
+    transition: all .3s ease;
+    cursor: pointer;
+    &__link {
+      text-decoration: none;
+      color: $dark-gray;
+    }
+    &_active {
+      background-color: $navy;
+      border: 1px solid $navy;
+      .filter-tag__link {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,42 +1,5 @@
 .blog {
-  &-container {
-    max-width: 1140px;
-    margin: auto;
-    padding-top: 82px;
-    padding-bottom: 106px;
-  }
   &-title {
     margin-bottom: 40px;
-  }
-  &-tags {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 72px;
-  }
-  &-tag {
-    background-color: $white;
-    border: 1px solid $dark-gray;
-    box-sizing: border-box;
-    border-radius: 30px;
-    font-family: $reg;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 19px;
-    &__link {
-      text-decoration: none;
-      color: $dark-gray;
-      &_active {
-        color: $white;
-      }
-    }
-    &_active {
-      background-color: $navy;
-      border: 1px solid $navy;
-    }
   }
 }

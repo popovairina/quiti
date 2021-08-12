@@ -56,6 +56,9 @@
         &:focus {
             border-color: $accent;
         }
+        &::placeholder {
+            color: $dark-gray;
+        }
     }
     &__textarea {
         height: 84px;
@@ -71,12 +74,12 @@
     }
     &__agreement {
         font-family: $reg;
-        
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         color: #737373;
         a {
+            text-decoration: underline;
             color: #737373;
         }
     }

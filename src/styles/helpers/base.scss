@@ -25,7 +25,16 @@ ul, li {
   list-style-type: none;
 }
 
+main.page {
+  padding-top: 82px;
+  padding-bottom: 106px;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 h1, .page-title {
+  margin-bottom: 20px;
   font-family: $add;
   color: $graphite;
   font-weight: 800;
