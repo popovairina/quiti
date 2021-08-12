@@ -34,39 +34,41 @@
     height: 100%;
     object-fit: cover;
   }
-  &-subtitle {
-    width: 656px;
-    font-family: $reg;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 130%;
-    color: #24344B;
-    margin-bottom: 25px;
-  }
-  &-text {
-    width: 710px;
-    font-family: $reg;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: #24344B;
-    margin-bottom: 25px;
-  }
-  &-list {
-    padding-left: 26px;
-    margin-bottom: 25px;
-    &__item {
+  .bs-content {
+    h3 {
+      width: 656px;
       font-family: $reg;
       font-style: normal;
-      font-weight: 700;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 130%;
+      color: #24344B;
+      margin-bottom: 25px;
+    }
+    p {
+      width: 710px;
+      font-family: $reg;
+      font-style: normal;
+      font-weight: normal;
       font-size: 18px;
       line-height: 22px;
       color: #24344B;
-      list-style: disc;
+      margin-bottom: 25px;
     }
-  }
+    ul {
+      padding-left: 26px;
+      margin-bottom: 25px;
+      li {
+        font-family: $reg;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #24344B;
+        list-style: disc;
+      }
+    }
+  } 
   &-mail {
     color: $accent;
     &:hover {
