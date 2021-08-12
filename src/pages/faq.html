@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   @@include('../blocks/favicon/favicon.html')
   <link rel="stylesheet" href="css/common.css">
-  <title>Блог Quiti</title>
+  <title>FAQ</title>
 </head>
 <body>
 @@include('../blocks/header/header.html')
 
-@@include('../blocks/blog/blog.html')
+@@include('../blocks/faq/faq.html')
+@@include('../blocks/cta/cta.html', {
+  "heading": "Не нашли ответ на свой вопрос? Свяжитесь с нами"
+})  
 
 @@include('../blocks/footer/footer.html')
 
