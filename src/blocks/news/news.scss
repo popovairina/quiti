@@ -5,10 +5,12 @@
     }
     &__wrap {
         display: flex;
-        margin: 0 -16px 70px;
+        flex-wrap: wrap;
+        margin: 0 -16px;
     }
     &__card {
         width: calc(100% / 3 - 32px);
         margin: 0 16px;
+        margin-bottom: 40px;
     }
 }
