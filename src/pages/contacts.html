@@ -12,11 +12,13 @@
 @@include('../blocks/header/header.html')
 
 
-@@include('../blocks/contacts/contacts.html')
+<main>  
+  @@include('../blocks/contacts/contacts.html')
+  @@include('../blocks/cta/cta.html', {
+    "heading": "Отправьте заявку и мы свяжемся с вами"
+  })
+</main>
 
-@@include('../blocks/cta/cta.html', {
-  "heading": "Отправьте заявку и мы свяжемся с вами"
-})
 
 
 @@include('../blocks/footer/footer.html')

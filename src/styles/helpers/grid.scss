@@ -10,3 +10,12 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-4 {
+  width: calc(100% / 12 * 4 - 32px);
+  margin: 0 16px;
+}

@@ -14,7 +14,11 @@
 
 .map {
   position: relative;
-
+  &__wrap {
+    position:relative;
+    overflow:hidden; 
+    display: flex;
+  }
   &-info {
     position: absolute;
     top: 20%;

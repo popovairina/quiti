@@ -1,0 +1,32 @@
+.info-section {
+    padding: 67px 0 98px;
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    &__title {
+        width: 48.8%;
+        margin-right: 30px;
+    }
+    &__text {
+        width: 48.8%;
+        max-width: 508px;
+        font-family: $reg;
+        font-size: 18px;
+        line-height: 22px;
+        p {
+            margin-bottom: 23px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__subtitle {
+        margin-bottom: 22px;
+        font-family: $reg;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
