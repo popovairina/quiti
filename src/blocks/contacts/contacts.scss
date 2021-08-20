@@ -1,58 +1,57 @@
 .contacts {
   padding-top: 98px;
+
   &-container {
     max-width: 1140px;
-    padding: 0px 15px;
     margin: auto;
-    .cta-contacts {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 100%;
-      padding-top: 0px;
-      margin-bottom: 83px;
-    }
+    padding: 0 15px;
   }
+
   &-title {
     margin-bottom: 85px;
   }
-  .map {
-    position: relative;
-    &-info {
-      position: absolute;
-      top: 20%;
-      left: 15%;
-      background-color: $white;
-      z-index: 100;
-      padding: 38px 68px 44px 30px;
-      &__title {
-        width: 344px;
-        font-family: $add;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 38px;
-        line-height: 45px;
-        color: $navy;
-        margin-bottom: 30px;
-      }
-      &__subtitle {
-        font-family: $reg;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: $dark-gray;
-        margin-bottom: 10px;
-      }
-      &__address {
-        width: 267px;
-        font-family: $reg;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 130%;
-        color: $graphite;
-      }
+}
+
+.map {
+  position: relative;
+
+  &-info {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 100;
+    padding: 38px 68px 44px 30px;
+    background-color: $white;
+
+    &__title {
+      width: 344px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 38px;
+      line-height: 45px;
+      font-family: $add;
+      color: $navy;
+      font-style: normal;
+    }
+
+    &__subtitle {
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      font-family: $reg;
+      color: $dark-gray;
+      font-style: normal;
+    }
+
+    &__address {
+      width: 267px;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 130%;
+      font-family: $reg;
+      color: $graphite;
+      font-style: normal;
     }
   }
 }
