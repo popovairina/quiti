@@ -11,7 +11,7 @@
 <body>
 @@include('../blocks/header/header.html')
 
-<main class="page">
+<main>
 
     <section class="hero-service">
         <div class="container">
@@ -27,6 +27,12 @@
             </div>
         </div>
     </section>
+
+    @@include('../blocks/service-photo/service-photo.html')
+
+    @@include('../blocks/cta/cta.html', {
+        "heading": "Отправьте заявку и мы свяжемся с вами"
+    })
     
 </main>
 
