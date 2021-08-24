@@ -2236,12 +2236,6 @@ a:hover {
 }
 
 .features-title {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-  text-align: center;
-  color: #0081C8;
   margin-bottom: 69px;
 }
 
@@ -2380,12 +2374,6 @@ a:hover {
 }
 
 .pricelist-title {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-  color: #0081C8;
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -2520,12 +2508,6 @@ a:hover {
 }
 
 .process-title {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-  color: #0081C8;
-  text-align: center;
   margin-bottom: 20px;
 }
 
