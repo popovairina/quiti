@@ -11,6 +11,13 @@
       margin-top: 58px;
     }
   }
+  @media (max-width: 767px) {
+    .profile {
+      &-container {
+        max-width: 359px;
+      }
+    }
+  }
   &-tag {
     width: fit-content;
     text-align: center;
@@ -40,11 +47,38 @@
     &__photo {
       margin-bottom: 29px;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__photo {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
     &__btn {
       min-width: 272px;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__btn {
+            margin-bottom: 36px;
+          }
+        }
+      }
+    }
     &__about {
       max-width: 734px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__about {
+            padding: 0 20px 36px 20px;
+          }
+        }
+      }
     }
     &__image {
       width: 100%;
@@ -100,8 +134,32 @@
     }
     &__row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__row {
+            display: block;
+            text-align: center;
+            padding: 0 20px 0px 20px;
+          }
+        }
+      }
+    }
+    &__person {
+      text-align: start;
+      padding-top: 10px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__person {
+            padding-top: 0;
+          }
+        }
+      }
     }
     &__string {
       display: flex;
@@ -119,6 +177,15 @@
     &-features {
       column-count: 2;
       margin-bottom: 28px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &-features {
+            column-count: 1;
+          }
+        }
+      }
     }
     &__img {
       width: 22px;
@@ -147,12 +214,53 @@
       line-height: 19px;
       color: $dark-gray;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__review {
+            width: auto;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__col {
+            &_date {
+              display: none;
+            }
+          }
+        }
+      }
+    }
     .all-reviews {
       text-align: center;
       margin-top: 50px;
     }
   }
+  @media (max-width: 767px) {
+    .profile {
+      &-section {
+        padding: 26px 20px 39px 20px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .profile {
+      &-section {
+        &_mobile {
+          padding: 0;
+        }
+      }
+    }
+  }
   &__cta-btn {
     min-width: 264px;
+  }
+}
+@media (max-width: 767px) {
+  .profile {
+    padding-bottom: 70px; 
   }
 }
