@@ -3,27 +3,29 @@
 }
 
 .reasons {
-  padding-top: 87px;
+  padding-top: 86px;
   padding-bottom: 87px;
   background-color: $light-gray;
 
-  &-container {
+  &-wrap {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1175px;
-    margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    // justify-content: space-between;
+    // align-items: center;
   }
 
   &-collab {
     flex-basis: 50%;
+    margin-right: 16px;
+    img {
+      left: -26px;
+      top: -20px;
+      position: relative;
+    }
   }
 
   &-descr {
     flex-basis: 50%;
+    max-width: 525px;
   }
 
   &-title {
@@ -32,26 +34,23 @@
     font-size: 32px;
     line-height: 39px;
     font-family: $reg;
-    color: $navy;
   }
 
   &-list {
-    margin-left: 20px;
-    padding: 0;
-
+    margin-left: 18px;
     &__item {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
       list-style: auto;
       font-weight: 400;
       font-size: 16px;
-      line-height: 130%;
+      line-height: 1.315;
       font-family: $reg;
       color: $graphite;
     }
   }
 }
 
-.features {
+.features-services {
   padding-top: 56px;
   padding-bottom: 50px;
   background-color: $white;
@@ -108,10 +107,6 @@
     font-family: $reg;
     text-align: center;
     color: $dark-gray;
-
-    &_navy {
-      color: $navy;
-    }
   }
 
   &-btn {

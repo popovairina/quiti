@@ -254,8 +254,11 @@ li {
 }
 
 ul,
-li {
+li,
+ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 main.page {
@@ -275,6 +278,7 @@ h1,
   font-weight: 800;
   font-size: 52px;
   line-height: 1.17;
+  letter-spacing: -0.7px;
 }
 
 .section-title {
@@ -857,7 +861,7 @@ a:hover {
 }
 
 .hero-service {
-  padding: 55px 0 53px;
+  padding: 60px 0 68px;
 }
 
 .hero-service__wrap {
@@ -873,7 +877,7 @@ a:hover {
 }
 
 .hero-service__title {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .hero-service__info {
@@ -881,11 +885,11 @@ a:hover {
 }
 
 .hero-service__text {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
   color: #6D6D6D;
+  font-size: 16px;
+  line-height: 1.3;
 }
 
 .card-bordered {
@@ -2139,81 +2143,76 @@ a:hover {
 }
 
 .reasons {
-  background-color: #F7F7F7;
-  padding-top: 87px;
+  padding-top: 86px;
   padding-bottom: 87px;
+  background-color: #F7F7F7;
 }
 
-.reasons-container {
-  padding-right: 15px;
-  padding-left: 15px;
-  max-width: 1175px;
-  width: 100%;
-  margin: auto;
+.reasons-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .reasons-collab {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  margin-right: 16px;
+}
+
+.reasons-collab img {
+  left: -26px;
+  top: -20px;
+  position: relative;
 }
 
 .reasons-descr {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  max-width: 525px;
 }
 
 .reasons-title {
-  font-family: "Inter", sans-serif;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  color: #0081C8;
-  margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
 }
 
 .reasons-list {
-  padding: 0;
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 .reasons-list__item {
-  font-family: "Inter", sans-serif;
+  margin-bottom: 31px;
+  list-style: auto;
   font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 1.315;
+  font-family: "Inter", sans-serif;
   color: #3C3C3C;
-  list-style: auto;
-  margin-bottom: 30px;
 }
 
-.features {
-  background-color: #ffffff;
+.features-services {
   padding-top: 56px;
   padding-bottom: 50px;
+  background-color: #ffffff;
 }
 
-.features-container {
+.features-services-container {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 980px;
-  width: 100%;
-  margin: auto;
 }
 
-.features-title {
+.features-services-title {
   margin-bottom: 69px;
 }
 
-.features-block {
+.features-services-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2225,70 +2224,66 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.features__string {
-  -ms-flex-preferred-size: 47%;
-  flex-basis: 47%;
+.features-services__string {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 47%;
+  flex-basis: 47%;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 26px;
 }
 
-.features__img {
+.features-services__img {
   width: 24px;
   height: 25px;
+  margin-top: 5px;
+  margin-right: 18px;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.0993 23.8967C8.3598 23.8967 7.6594 23.5516 7.2106 22.9566L1.1365 14.9309C0.948706 14.683 0.811605 14.4006 0.733033 14.0997C0.654462 13.7988 0.635962 13.4854 0.67859 13.1774C0.721219 12.8693 0.824139 12.5727 0.981469 12.3045C1.1388 12.0363 1.34745 11.8017 1.5955 11.6142C1.84346 11.4258 2.12615 11.2883 2.42736 11.2094C2.72857 11.1306 3.04238 11.1119 3.35082 11.1546C3.65925 11.1972 3.95623 11.3003 4.22475 11.4579C4.49326 11.6156 4.72803 11.8246 4.9156 12.0732L8.9123 17.35L18.961 1.21356C19.2943 0.680776 19.8252 0.301926 20.4374 0.160107C21.0497 0.0182878 21.6931 0.125079 22.2267 0.457057C23.3368 1.14726 23.6785 2.60926 22.9849 3.72106L11.1121 22.7781C10.9094 23.1048 10.6301 23.3772 10.2983 23.5715C9.96646 23.7659 9.59225 23.8763 9.2081 23.8933C9.1707 23.8967 9.1367 23.8967 9.0993 23.8967Z' fill='%2336BCBB'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  margin-right: 18px;
-  margin-top: 5px;
 }
 
-.features__text {
+.features-services__text {
   width: 410px;
-  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-  color: #000;
+  font-family: "Inter", sans-serif;
+  color: #000000;
 }
 
-.features-cost {
-  font-family: "Inter", sans-serif;
+.features-services-cost {
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #6D6D6D;
+  font-family: "Inter", sans-serif;
   text-align: center;
-  margin-bottom: 18px;
+  color: #6D6D6D;
 }
 
-.features-cost_navy {
-  color: #0081C8;
-}
-
-.features-btn {
+.features-services-btn {
   text-align: center;
 }
 
 .albums {
-  background-color: #F7F7F7;
   padding-top: 83px;
   padding-bottom: 74px;
+  background-color: #F7F7F7;
 }
 
 .albums-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .albums-descr {
@@ -2298,12 +2293,12 @@ a:hover {
 }
 
 .albums-title {
-  font-family: "Raleway", sans-serif;
+  margin-bottom: 40px;
   font-weight: 800;
   font-size: 52px;
   line-height: 61px;
+  font-family: "Raleway", sans-serif;
   color: #3C3C3C;
-  margin-bottom: 40px;
 }
 
 .albums-preview {
@@ -2317,8 +2312,8 @@ a:hover {
 
 .albums-list__item {
   width: 500px;
-  list-style: disc;
   margin-bottom: 31px;
+  list-style: disc;
 }
 
 .albums-list__item:last-child {
@@ -2326,25 +2321,25 @@ a:hover {
 }
 
 .albums-list__text {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  font-family: "Inter", sans-serif;
   color: #3C3C3C;
 }
 
 .pricelist {
-  background-color: #ffffff;
   padding-top: 48px;
   padding-bottom: 80px;
+  background-color: #ffffff;
 }
 
 .pricelist-container {
+  width: 100%;
+  max-width: 1175px;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 1175px;
-  width: 100%;
-  margin: auto;
 }
 
 .pricelist-title {
@@ -2366,8 +2361,8 @@ a:hover {
 }
 
 .pricelist-table .td-top {
-  border: 1px solid #92CEE9;
   padding: 20px 25px;
+  border: 1px solid #92CEE9;
 }
 
 .pricelist-table .td-top_big {
@@ -2379,27 +2374,27 @@ a:hover {
 }
 
 .pricelist-table .td-small {
-  text-align: center;
   padding: 20px 25px;
+  text-align: center;
 }
 
 .pricelist-table td {
-  padding: 20px 0px 20px 25px;
+  padding: 20px 0 20px 25px;
 }
 
 .pricelist-table td .td-title {
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  font-family: "Inter", sans-serif;
   color: #3C3C3C;
 }
 
 .pricelist-table td .td-text {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  font-family: "Inter", sans-serif;
   color: #3C3C3C;
 }
 
@@ -2416,21 +2411,21 @@ a:hover {
 }
 
 .lab {
-  background-color: #F7F7F7;
   padding-top: 83px;
   padding-bottom: 74px;
+  background-color: #F7F7F7;
 }
 
 .lab-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .lab-descr {
@@ -2440,22 +2435,22 @@ a:hover {
 }
 
 .lab-title {
-  font-family: "Raleway", sans-serif;
+  margin-bottom: 40px;
   font-weight: 800;
   font-size: 52px;
   line-height: 61px;
+  font-family: "Raleway", sans-serif;
   color: #3C3C3C;
-  margin-bottom: 40px;
 }
 
 .lab-text {
   width: 460px;
-  font-family: "Inter", sans-serif;
+  margin-bottom: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  font-family: "Inter", sans-serif;
   color: #3C3C3C;
-  margin-bottom: 50px;
 }
 
 .lab-text:last-child {
@@ -2468,17 +2463,17 @@ a:hover {
 }
 
 .process {
-  background-color: #F7F7F7;
   padding-top: 60px;
   padding-bottom: 73px;
+  background-color: #F7F7F7;
 }
 
 .process-container {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 980px;
-  width: 100%;
-  margin: auto;
 }
 
 .process-title {
