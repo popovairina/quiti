@@ -2780,6 +2780,14 @@ a:hover {
     padding: 0 20px 36px 20px;
   }
 
+  .profile-section .profile-section__title {
+    font-size: 20px;
+  }
+
+  .profile-section .profile-section__text {
+    font-size: 14px;
+  }
+
   .profile-section .profile-section__row {
     display: block;
     text-align: center;
