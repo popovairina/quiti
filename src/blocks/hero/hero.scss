@@ -8,7 +8,7 @@
             padding: 100px 0;
         }
         @media screen and (max-width: 767px) {
-            padding-bottom: 60px;
+            padding: 193px 0 52px;
         }
     }
     &__subtitle {
@@ -21,6 +21,11 @@
         text-align: center;
         @media (max-width: 1199px) {
             max-width: 784px;
+        }
+        @media (max-width: 767px) {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 33px;
         }
     }
     &__btn-wrap {
@@ -38,9 +43,9 @@
                 margin-right: 0 !important;
             }
         }
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 767px) {
             .btn {
-                width: 80%;
+                width: auto;
             }
         }
     }

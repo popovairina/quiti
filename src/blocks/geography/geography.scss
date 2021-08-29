@@ -1,9 +1,7 @@
 .geography {
   padding-top: 90px;
-  padding-bottom: 191px;
   @media (max-width: 767px) {
     padding-top: 50px;
-    padding-bottom: 100px;
   }
   &__title {
     font-family: $add;
@@ -21,6 +19,7 @@
   &__img-wrap {
     text-align: center;
     margin: 0 auto 90px auto;
+    display: block;
   }
   &__img {
     width: 100%;

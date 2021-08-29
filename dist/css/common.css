@@ -1885,6 +1885,7 @@ a:hover {
 
 .features_home {
   padding: 41px 0 18px;
+  background-color: transparent;
 }
 
 .features_section {
@@ -2766,13 +2767,13 @@ a:hover {
   color: #3C3C3C;
 }
 
-.features {
+.features-services {
   padding-top: 56px;
   padding-bottom: 50px;
   background-color: #ffffff;
 }
 
-.features-container {
+.features-services-container {
   width: 100%;
   max-width: 980px;
   margin: auto;
@@ -2780,11 +2781,11 @@ a:hover {
   padding-left: 15px;
 }
 
-.features-title {
+.features-services-title {
   margin-bottom: 75px;
 }
 
-.features-block {
+.features-services-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2796,7 +2797,7 @@ a:hover {
   margin-bottom: 51px;
 }
 
-.features__string {
+.features-services__string {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2808,7 +2809,7 @@ a:hover {
   margin-bottom: 26px;
 }
 
-.features__img {
+.features-services__img {
   width: 24px;
   height: 25px;
   margin-top: 5px;
@@ -2817,7 +2818,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.features__text {
+.features-services__text {
   width: 410px;
   font-weight: normal;
   font-size: 18px;
@@ -2826,7 +2827,7 @@ a:hover {
   color: #000000;
 }
 
-.features-cost {
+.features-services-cost {
   margin-bottom: 18px;
   font-weight: 400;
   font-size: 18px;
@@ -2836,11 +2837,11 @@ a:hover {
   color: #6D6D6D;
 }
 
-.features-cost_navy {
+.features-services-cost_navy {
   color: #0081C8;
 }
 
-.features-btn {
+.features-services-btn {
   text-align: center;
 }
 
@@ -3145,7 +3146,6 @@ a:hover {
 
 .geography {
   padding-top: 90px;
-  padding-bottom: 191px;
 }
 
 .geography__title {
@@ -3161,6 +3161,7 @@ a:hover {
 .geography__img-wrap {
   text-align: center;
   margin: 0 auto 90px auto;
+  display: block;
 }
 
 .geography__img {
@@ -3870,8 +3871,8 @@ a:hover {
 
 @media screen and (max-width: 1023px) {
   .btn {
-    padding: 16px 18px;
-    font-size: 14px;
+    padding: 20px 30px;
+    font-size: 16px;
   }
 
   .hero_home {
@@ -3944,6 +3945,12 @@ a:hover {
     height: 40px;
     top: calc(50% - 20px);
     left: calc(50% - 20px);
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 33px;
   }
 
   .hero-service .hero-service__wrap {
@@ -4157,19 +4164,19 @@ a:hover {
     font-size: 14px;
   }
 
-  .features-container {
+  .features-services-container {
     max-width: 350px;
   }
 
-  .features-title {
+  .features-services-title {
     margin-bottom: 40px;
   }
 
-  .features__text {
+  .features-services__text {
     width: 238px;
   }
 
-  .features-cost {
+  .features-services-cost {
     font-size: 16px;
   }
 
@@ -4267,7 +4274,6 @@ a:hover {
 
   .geography {
     padding-top: 50px;
-    padding-bottom: 100px;
   }
 
   .geography__title {
@@ -4308,7 +4314,7 @@ a:hover {
     padding-bottom: 50px;
   }
 
-  .footer .footer__top {
+  .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4319,8 +4325,12 @@ a:hover {
     text-align: center;
   }
 
-  .footer .footer__logo {
+  .footer__logo {
     margin-bottom: 45px;
+  }
+
+  .footer__logo img {
+    max-width: 126px;
   }
 
   .footer .footer__privacy {
@@ -4353,7 +4363,11 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .hero_home {
-    padding-bottom: 60px;
+    padding: 193px 0 52px;
+  }
+
+  .hero__btn-wrap .btn {
+    width: auto;
   }
 }
 
@@ -4361,12 +4375,6 @@ a:hover {
   h1,
   .page-title {
     font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .hero__btn-wrap .btn {
-    width: 80%;
   }
 }
 /*# sourceMappingURL=maps/common.css.map */
