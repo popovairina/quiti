@@ -3994,6 +3994,12 @@ a:hover {
   }
 }
 
+@media (max-width: 811px) {
+  .babysitters-filter__label {
+    height: 40px;
+  }
+}
+
 @media (max-width: 767px) {
   main.page {
     padding-top: 35px;
@@ -4396,6 +4402,42 @@ a:hover {
   .geography-single_descr {
     padding-top: 35px;
     padding-bottom: 50px;
+  }
+
+  .babysitters {
+    padding: 29px 0 1px;
+  }
+
+  .babysitters-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 54px auto;
+  }
+
+  .babysitters-filter__item {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+
+  .babysitters-filter__label {
+    height: auto;
+  }
+
+  .babysitters-results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 54px auto;
+  }
+
+  .babysitters-results .card-babysitters {
+    width: auto;
+    margin: 0 0 22px 0;
   }
 }
 
