@@ -2612,6 +2612,25 @@ a:hover {
   width: 100%;
 }
 
+.geography {
+  padding-top: 90px;
+  padding-bottom: 191px;
+}
+
+.geography__title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 61px;
+  color: #3C3C3C;
+  margin-bottom: 90px;
+}
+
+.geography__img-wrap {
+  text-align: center;
+}
+
 .info-section {
   padding: 67px 0 98px;
 }

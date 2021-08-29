@@ -1,0 +1,16 @@
+.geography {
+  padding-top: 90px;
+  padding-bottom: 191px;
+  &__title {
+    font-family: $add;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 61px;
+    color: $graphite;
+    margin-bottom: 90px;
+  }
+  &__img-wrap {
+    text-align: center;
+  }
+}
