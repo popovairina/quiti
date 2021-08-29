@@ -32,6 +32,10 @@ li {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul,
 li,
 ol {
@@ -64,7 +68,9 @@ h1,
   letter-spacing: -0.7px;
 
   @media (max-width: 1199px) {
-    font-size: 44px;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: 767px) {

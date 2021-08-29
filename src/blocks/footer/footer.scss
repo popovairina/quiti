@@ -8,14 +8,14 @@
         padding-top: 50px;
         padding-bottom: 27px;
         border-bottom: 0.5px solid rgba(#fff, .5);
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
     }
     &__logo {
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             margin-bottom: 45px;
             img {
                 max-width: 126px;
@@ -28,7 +28,7 @@
         justify-content: space-between;
         padding: 10px 0 21px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
         .footer {
             &__privacy {
                 flex-direction: column;
@@ -41,7 +41,7 @@
         width: 25%;
         max-width: 254px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
         .footer {
             &__col {
                 width: auto;
@@ -53,6 +53,7 @@
             li {
                 display: block;
                 margin-bottom: 11px;
+                padding-right: 10px;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -70,7 +71,7 @@
             }
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
         .footer {
             &__nav {
                 margin-bottom: 40px;
@@ -80,7 +81,7 @@
     &__text {
         font-size: 14px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
         .footer {
             &__text {
                 margin-bottom: 22px;
@@ -109,7 +110,7 @@
         line-height: 19px;
         color: #FFFFFF;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
         .footer-contacts {
             &__link {
                 margin-right: 0;

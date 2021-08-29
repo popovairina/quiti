@@ -40,8 +40,10 @@
         color: #3C3C3C;
         cursor: pointer;
         transition: all .3s ease;
-        &:hover {
-            background-color: $bg-light;
+        @media (min-width: 1024px) {
+            &:hover {
+                background-color: $bg-light;
+            }
         }
         &:after {
             position: absolute;
