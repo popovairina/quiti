@@ -1766,7 +1766,7 @@ a:hover {
 }
 
 .profile-container {
-  max-width: 820px;
+  max-width: 814px;
   width: 100%;
   margin: auto;
 }
@@ -1792,7 +1792,7 @@ a:hover {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 4px 18px 4px 18px;
-  margin-top: 15px;
+  margin-top: 29px;
   margin-bottom: 25px;
 }
 
@@ -1812,12 +1812,12 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 35px 30px 50px 30px;
+  padding: 35px 30px 47px 30px;
   margin-bottom: 30px;
 }
 
 .profile-section__photo {
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 
 .profile-section__btn {
@@ -1971,6 +1971,10 @@ a:hover {
 .profile-section .all-reviews {
   text-align: center;
   margin-top: 50px;
+}
+
+.profile-section .sm-hidden {
+  display: none;
 }
 
 .profile__cta-btn {
@@ -2768,8 +2772,12 @@ a:hover {
     max-width: 359px;
   }
 
+  .profile .profile-tag {
+    margin-top: 16px;
+  }
+
   .profile-section .profile-section__photo {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .profile-section .profile-section__btn {
@@ -2777,7 +2785,11 @@ a:hover {
   }
 
   .profile-section .profile-section__about {
-    padding: 0 20px 36px 20px;
+    padding: 0 20px 30px 20px;
+  }
+
+  .profile-section .profile-section__image {
+    height: 279px;
   }
 
   .profile-section .profile-section__title {
@@ -2802,6 +2814,7 @@ a:hover {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+    margin-bottom: 0;
   }
 
   .profile-section .profile-section__review {
@@ -2813,7 +2826,7 @@ a:hover {
   }
 
   .profile .profile-section {
-    padding: 26px 20px 39px 20px;
+    padding: 26px 20px 30px 20px;
   }
 
   .profile .profile-section_mobile {
