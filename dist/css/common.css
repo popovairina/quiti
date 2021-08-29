@@ -2628,7 +2628,14 @@ a:hover {
 }
 
 .geography__img-wrap {
+  width: 650px;
+  height: 549px;
   text-align: center;
+  margin: 0 auto 90px auto;
+}
+
+.geography__img {
+  width: 100%;
 }
 
 .info-section {

@@ -11,6 +11,12 @@
     margin-bottom: 90px;
   }
   &__img-wrap {
+    width: 650px;
+    height: 549px;
     text-align: center;
+    margin: 0 auto 90px auto;
+  }
+  &__img {
+    width: 100%;
   }
 }
