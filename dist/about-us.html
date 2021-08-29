@@ -30,7 +30,7 @@
 <body>
 <header class="header">
     <a href="/" class="header__logo"><img src="./img/logo.svg" alt=""></a>
-    <nav class="header__nav">
+    <nav class="header__nav js-nav">
         <ul>
             <li class="nav-item"><a href="./service-soprovozhdenie.html">Сопровождение</a></li>
             <li class="nav-item"><a href="./service-babysitters.html">Бебиситтеры</a></li>
@@ -39,15 +39,24 @@
             <li class="nav-item"><a href="./about-us.html">О Компании</a></li>
             <li class="nav-item"><a href="./faq.html">FAQ</a></li>
             <li class="nav-item"><a href="./contacts.html">Контакты</a></li>
+            <li>
+                <button class="header__cta-mobile btn btn-white-o display-lg">Заказать звонок</button>
+            </li>
         </ul>
+        <div class="header__nav-close display-lg js-nav-close"></div>
     </nav>
-    <button class="header__cta btn">Заказать звонок</button>
-    <div class="header__socials socials">
+    <div class="header__links display-sm">
+        <a href="tel:+74999623050" class="header__link icon-phone"></a>
+        <a href="mailto:info@quiti.ru" class="header__link icon-mail"></a>
+    </div>
+    <button class="header__cta btn sm-hidden">Заказать звонок</button>
+    <div class="header__socials socials sm-hidden">
         <a href="#" class="socials__icon icon-youtube"></a>
         <a href="#" class="socials__icon icon-vk"></a>
         <a href="#" class="socials__icon icon-fb"></a>
         <a href="#" class="socials__icon icon-inst"></a>
     </div>
+    <button class="header__burger display-lg js-burger"></button>
 </header>
 
 <main>
@@ -188,6 +197,48 @@
         </div>
     </section>
     
+    <section class="cta cta-contacts bg-light-gray">
+    <div class="container">
+        <div class="cta__wrap">
+            <div class="cta__form-wrap">
+                <h2 class="cta__title cta-contacts__title text-navy">Свяжитесь с нами</h2>
+                <form action="" class="cta__form cta-form">
+                    <input name="userName" type="text" class="cta-form__input" required placeholder="Имя*">
+                    <input name="userPhone" type="tel" class="cta-form__input" required placeholder="Телефон*">
+                    <input name="userEmail" type="email" class="cta-form__input" required placeholder="E-mail*">
+                    <textarea name="userMessage" class="cta-form__input cta-form__textarea" placeholder="Комментарий"></textarea>
+                    <div class="cta-form__footer">
+                        <input type="submit" class="cta-form__btn btn" value="отправить">
+                        <div class="cta-form__agreement">Нажимая кнопку «Отправить заявку», Вы принимаете условия <a href="#">пользовательского соглашения</a></div>
+                    </div>
+                </form>
+            </div>
+            <div class="cta__contacts cta-contacts">
+                <div class="cta-contacts__row">
+                    <div class="cta-contacts__heading">Телефон</div>
+                    <div class="cta-contacts__info">
+                        <a href="tel:+74999623050" class="cta-contacts__link">8 (499) 962-30-50</a>
+                        <div class="cta-contacts__small">пн-пт 9:00-18:00</div>
+                    </div>
+                </div>
+                <div class="cta-contacts__row">
+                    <div class="cta-contacts__heading">E-mail</div>
+                    <div class="cta-contacts__info">
+                        <a href="mailto:info@quiti.ru" class="cta-contacts__link">info@quiti.ru</a>
+                    </div>
+                </div>
+                <div class="cta-contacts__row">
+                    <div class="cta-contacts__heading">Мессенджеры</div>
+                    <div class="cta-contacts__info">
+                        <a href="#" class="cta-contacts__link">WhatsApp</a>
+                        <a href="#" class="cta-contacts__link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 </main>
 
 <footer class="footer">
