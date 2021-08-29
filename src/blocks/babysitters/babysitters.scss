@@ -1,0 +1,58 @@
+.babysitters {
+    padding: 37px 0 94px;
+}
+
+.babysitters-filter {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -15px 54px;
+    &__item {
+        width: calc(100% / 4 - 30px);
+        margin: 0 15px;
+    }
+    &__label {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-family: $reg;
+        font-size: 16px;
+        line-height: 24px;
+        color: $graphite;
+    }
+    &__select {
+        display: block;
+        width: 100%;
+        appearance: none;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        padding: 12px 42px 12px 22px;
+        font-family: $reg;
+        font-size: 18px;
+        line-height: 22px;
+        color: $dark-gray !important;
+        outline: none;
+        transition: all.3s ease;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 16px) 20px;
+        background-image: url("data:image/svg+xml,%3Csvg width='19' height='10' viewBox='0 0 19 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L9.5 8L17 2' stroke='%236D6D6D' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        &:hover {
+            border-color: $dark-gray;
+        }
+        &:focus {
+            border-color: $accent;
+        }
+    }
+}
+
+.babysitters-results {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -16px -40px;
+    .card-babysitters {
+        width: calc(100% / 3 - 32px);
+        margin: 0 16px 40px;
+    }
+}
