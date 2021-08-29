@@ -2218,20 +2218,20 @@ a:hover {
   padding-right: 26px;
 }
 
-.cta__contacts {
+.cta__form-wrap__contacts {
   width: 50%;
   max-width: 362px;
 }
 
-.cta-partnership {
+.cta .cta-partnership {
   padding: 58px 0 50px;
 }
 
-.cta-partnership .cta-contacts {
+.cta .cta-partnership .cta-contacts {
   padding-top: 8px;
 }
 
-.cta-form__input {
+.cta .cta-form__input {
   display: block;
   width: 100%;
   margin-bottom: 30px;
@@ -2250,48 +2250,48 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.cta-form__input:focus {
+.cta .cta-form__input:focus {
   border-color: #36BCBB;
 }
 
-.cta-form__input::-webkit-input-placeholder {
+.cta .cta-form__input::-webkit-input-placeholder {
   color: #6D6D6D;
 }
 
-.cta-form__input::-moz-placeholder {
+.cta .cta-form__input::-moz-placeholder {
   color: #6D6D6D;
 }
 
-.cta-form__input:-ms-input-placeholder {
+.cta .cta-form__input:-ms-input-placeholder {
   color: #6D6D6D;
 }
 
-.cta-form__input::-ms-input-placeholder {
+.cta .cta-form__input::-ms-input-placeholder {
   color: #6D6D6D;
 }
 
-.cta-form__input::placeholder {
+.cta .cta-form__input::placeholder {
   color: #6D6D6D;
 }
 
-.cta-form__textarea {
+.cta .cta-form__textarea {
   height: 84px;
   resize: none;
 }
 
-.cta-form__footer {
+.cta .cta-form__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
 }
 
-.cta-form__btn {
+.cta .cta-form__btn {
   min-width: 235px;
   margin-right: 40px;
 }
 
-.cta-form__agreement {
+.cta .cta-form__agreement {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -2299,16 +2299,16 @@ a:hover {
   color: #737373;
 }
 
-.cta-form__agreement a {
+.cta .cta-form__agreement a {
   color: #737373;
   text-decoration: underline;
 }
 
-.cta-contacts {
+.cta .cta-contacts {
   padding-top: 100px;
 }
 
-.cta-contacts_flex {
+.cta .cta-contacts_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2321,15 +2321,15 @@ a:hover {
   padding-top: 0;
 }
 
-.cta-contacts__title {
+.cta .cta-contacts__title {
   margin-bottom: 32px;
 }
 
-.cta-contacts__row {
+.cta .cta-contacts__row {
   margin-bottom: 32px;
 }
 
-.cta-contacts__heading {
+.cta .cta-contacts__heading {
   margin-bottom: 10px;
   font-weight: normal;
   font-size: 14px;
@@ -2338,7 +2338,7 @@ a:hover {
   color: #6D6D6D;
 }
 
-.cta-contacts__link {
+.cta .cta-contacts__link {
   margin-right: 30px;
   font-weight: bold;
   font-size: 26px;
@@ -2350,11 +2350,11 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.cta-contacts__link:hover {
+.cta .cta-contacts__link:hover {
   color: #36BCBB;
 }
 
-.cta-contacts__small {
+.cta .cta-contacts__small {
   margin-top: 10px;
   font-weight: normal;
   font-size: 14px;
@@ -3575,6 +3575,11 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  main.page {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
   h1,
   .page-title {
     font-size: 36px;
@@ -3686,24 +3691,45 @@ a:hover {
     margin-top: 16px;
   }
 
-  .cta .cta__wrap {
+  .faq__title-main {
+    margin-bottom: 45px;
+  }
+
+  .faq-main {
+    padding-bottom: 85px;
+  }
+
+  .faq-acc__button {
+    padding: 20px 20% 20px 0;
+    font-size: 16px;
+  }
+
+  .faq-acc__content {
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 45px 0 65px;
+  }
+
+  .cta__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .cta .cta__title {
+  .cta__title {
     font-size: 26px;
     line-height: 33px;
     margin-bottom: 40px;
   }
 
-  .cta .cta__form-wrap {
+  .cta__form-wrap {
     padding-right: 0;
   }
 
-  .cta-form .cta-form__footer {
+  .cta .cta-form__footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3711,7 +3737,7 @@ a:hover {
     text-align: center;
   }
 
-  .cta-form .cta-form__btn {
+  .cta .cta-form__btn {
     margin-right: 0;
     margin-bottom: 18px;
   }
