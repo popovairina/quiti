@@ -390,10 +390,6 @@ a:hover {
   margin: 0 16px;
 }
 
-.sm-hidden {
-  display: none;
-}
-
 .btn {
   display: inline-block;
   padding: 20px 30px;
@@ -3009,8 +3005,6 @@ a:hover {
 }
 
 .geography__img-wrap {
-  width: 650px;
-  height: 549px;
   text-align: center;
   margin: 0 auto 90px auto;
 }
@@ -3088,6 +3082,10 @@ a:hover {
   margin-left: 26px;
 }
 
+.geography-single__list_ol {
+  margin-bottom: 20px;
+}
+
 .geography-single__item_ul {
   list-style: disc;
   margin-bottom: 20px;
@@ -3095,6 +3093,7 @@ a:hover {
 
 .geography-single__item_ol {
   list-style: auto;
+  margin-bottom: 20px;
 }
 
 .babysitters {
@@ -3588,6 +3587,10 @@ a:hover {
     max-width: 350px;
   }
 
+  .sm-hidden {
+    display: none;
+  }
+
   .socials {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -3829,6 +3832,49 @@ a:hover {
 
   .service-rides-cost {
     font-size: 16px;
+  }
+
+  .geography {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .geography__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .geography-single_main {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .geography-single__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .geography-single__subtitle {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .geography-single__subtitle_little {
+    font-size: 18px;
+  }
+
+  .geography-single__text {
+    font-size: 14px;
+  }
+
+  .geography-single__btn {
+    margin-top: 30px;
+  }
+
+  .geography-single_descr {
+    padding-top: 35px;
+    padding-bottom: 50px;
   }
 
   .footer .footer__top {
