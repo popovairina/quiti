@@ -2879,6 +2879,36 @@ a:hover {
     margin-bottom: 36px;
   }
 
+  .cta .cta__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .cta .cta__title {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+
+  .cta .cta__form-wrap {
+    padding-right: 0;
+  }
+
+  .cta-form .cta-form__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-form .cta-form__btn {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
   .profile .profile-container {
     max-width: 359px;
   }
