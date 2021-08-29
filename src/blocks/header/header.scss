@@ -4,8 +4,19 @@
     justify-content: space-between;
     padding: 20px 33px 15px;
     background-color: #fff;
+    @media (max-width: 767px) {
+        padding: 12px 16px;
+    }
     &__logo {
         margin-right: 29px;
+        @media (max-width: 1300px) {
+            margin-right: 12px;
+        }
+        @media (max-width: 767px) {
+            img {
+                width: 104px;
+            }
+        }
     }
     &__nav {
         flex-grow: 1;
@@ -15,17 +26,22 @@
             justify-content: center;
             li {
                 padding: 10px 12.5px;
+                @media (max-width: 1440px) {
+                    padding: 10px 8px;
+                }
             }
             a {
                 position: relative;
                 display: inline-block;
-                font-family: $reg;
-                
+                font-family: $reg;                
                 font-weight: 600;
                 font-size: 16px;
                 color: $dark-gray;
                 text-decoration: none;
                 transition: all .3s ease;
+                @media (max-width: 1440px) {
+                    font-size: 14px;
+                }
                 &:before {
                     transition: all .3s ease;
                     width: 100%;
@@ -45,10 +61,95 @@
                 }
             }
         }
+        @media (max-width: 1199px) {
+            position: fixed;
+            top: 0;
+            right: -101%;
+            width: 100%;
+            max-width: 425px;
+            overflow-y: auto;
+            height: 100vh;
+            background-color: $navy;
+            transition: right .5s ease-in-out;
+            z-index: 10000;
+            &.opened {
+                right: 0;
+            }
+            ul {
+                max-width: 375px;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 77px 40px 50px;
+                li {
+                    padding: 0;
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
     }
-    .btn {
+    &__cta {
         margin: 0 35px;
         padding: 14px 20px;
         font-size: 14px;
+        @media (max-width: 1300px) {
+            font-size: 11px;
+            margin: 0 22px;
+            padding: 14px;
+        }
+        @media (max-width: 1199px) {
+            margin-left: auto;
+        }
+    }
+    &__burger {
+        margin-left: 40px;
+        width: 41px;
+        height: 37px;
+        background-color: #fff;
+        border: 0;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='41' height='37' viewBox='0 0 41 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.108643' y1='8.0271' x2='40.1086' y2='8.0271' stroke='%233C3C3C' stroke-width='2'/%3E%3Cline x1='0.108643' y1='18.0271' x2='40.1086' y2='18.0271' stroke='%233C3C3C' stroke-width='2'/%3E%3Cpath d='M0.108643 28.0271H23.6086' stroke='%233C3C3C' stroke-width='2'/%3E%3C/svg%3E%0A");
+        @media (max-width: 767px) {
+            margin-left: 21px;
+        }
+    }
+    &__cta-mobile {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+        display: block;
+        max-width: 294px;
+        padding: 15px;
+    }
+    &__nav-close {
+        position: absolute;
+        top: 20px;
+        right: 32px;
+        width: 32px;
+        height: 31px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='31' viewBox='0 0 32 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='2.70711' y1='1.29289' x2='30.9914' y2='29.5772' stroke='white' stroke-width='2'/%3E%3Cline x1='1.29289' y1='29.5771' x2='29.5772' y2='1.2928' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
+    }
+    &__links {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        display: block;
+        margin-left: 8px;
     }
 }

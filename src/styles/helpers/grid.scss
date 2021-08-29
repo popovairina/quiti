@@ -24,6 +24,16 @@
 }
 @media (max-width: 767px) {
   .sm-hidden {
-    display: none;
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .display-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .display-sm {
+    display: none !important;
   }
 }

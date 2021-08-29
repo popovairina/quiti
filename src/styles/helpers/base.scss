@@ -16,6 +16,9 @@ body {
   --safe-area-inset-right: env(safe-area-inset-right);
 }
 
+body.js-no-scroll {
+  overflow: hidden;
+}
 h1,
 h2,
 h3,

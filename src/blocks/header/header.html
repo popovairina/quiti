@@ -1,6 +1,6 @@
 <header class="header">
     <a href="/" class="header__logo"><img src="./img/logo.svg" alt=""></a>
-    <nav class="header__nav">
+    <nav class="header__nav js-nav">
         <ul>
             <li class="nav-item"><a href="./service-soprovozhdenie.html">Сопровождение</a></li>
             <li class="nav-item"><a href="./service-babysitters.html">Бебиситтеры</a></li>
@@ -9,13 +9,22 @@
             <li class="nav-item"><a href="./about-us.html">О Компании</a></li>
             <li class="nav-item"><a href="./faq.html">FAQ</a></li>
             <li class="nav-item"><a href="./contacts.html">Контакты</a></li>
+            <li>
+                <button class="header__cta-mobile btn btn-white-o display-lg">Заказать звонок</button>
+            </li>
         </ul>
+        <div class="header__nav-close display-lg js-nav-close"></div>
     </nav>
-    <button class="header__cta btn">Заказать звонок</button>
-    <div class="header__socials socials">
+    <div class="header__links display-sm">
+        <a href="tel:+74999623050" class="header__link icon-phone"></a>
+        <a href="mailto:info@quiti.ru" class="header__link icon-mail"></a>
+    </div>
+    <button class="header__cta btn sm-hidden">Заказать звонок</button>
+    <div class="header__socials socials sm-hidden">
         <a href="#" class="socials__icon icon-youtube"></a>
         <a href="#" class="socials__icon icon-vk"></a>
         <a href="#" class="socials__icon icon-fb"></a>
         <a href="#" class="socials__icon icon-inst"></a>
     </div>
+    <button class="header__burger display-lg js-burger"></button>
 </header>
