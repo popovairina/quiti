@@ -406,6 +406,10 @@ a:hover {
   margin: 0 16px;
 }
 
+.sm-hidden {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   background: #36BCBB;
@@ -1981,10 +1985,6 @@ a:hover {
   margin-top: 50px;
 }
 
-.profile-section .sm-hidden {
-  display: none;
-}
-
 .profile__cta-btn {
   min-width: 264px;
 }
@@ -2636,6 +2636,84 @@ a:hover {
 
 .geography__img {
   width: 100%;
+}
+
+.geography-single_main {
+  padding-top: 78px;
+  padding-bottom: 68px;
+}
+
+.geography-single__wrap {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+}
+
+.geography-single__title {
+  font-family: "Raleway", sans-serif;
+  font-style: 400;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 61px;
+  color: #3C3C3C;
+  margin-bottom: 36px;
+}
+
+.geography-single__subtitle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  margin-top: 50px;
+  margin-bottom: 14px;
+  color: #3C3C3C;
+}
+
+.geography-single__subtitle:first-child {
+  margin-top: 0;
+}
+
+.geography-single__subtitle_little {
+  font-size: 20px;
+}
+
+.geography-single__subtitle_navy {
+  color: #0081C8;
+}
+
+.geography-single__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3C3C3C;
+}
+
+.geography-single__btn {
+  text-align: center;
+  margin-top: 58px;
+}
+
+.geography-single_descr {
+  background-color: #F7F7F7;
+  padding-top: 75px;
+  padding-bottom: 102px;
+}
+
+.geography-single__list {
+  padding: 0;
+  margin-left: 26px;
+}
+
+.geography-single__item_ul {
+  list-style: disc;
+  margin-bottom: 20px;
+}
+
+.geography-single__item_ol {
+  list-style: auto;
 }
 
 .info-section {
