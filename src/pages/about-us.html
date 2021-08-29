@@ -9,24 +9,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/common.css">
-  <title>Сопровождение детей</title>
+  <title>О компании Quiti</title>
 </head>
 <body>
 @@include('../blocks/header/header.html')
 
-<main class="page">
+<main>
 
-    <section class="hero-service">
+    <section class="hero-service hero-service_video">
         <div class="container">
             <div class="hero-service__wrap">
                 <div class="hero-service__info">
-                    <h1 class="hero-service__title">О компании</h1>
-                    <div class="hero-service__text">Quiti - безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий. Сопровождаем детей, пока родители обеспечивают их будущее!                </div>
-                    <button class="btn">Оставить заявку</button>
+                    <h1 class="hero-service__title">О компании Quiti</h1>
+                    <div class="hero-service__text hero-service__text_sm">Давайте остановимся на минутку и подумаем о том, сколько дел нам приходится делать одновременно. Иногда складывается впечатление, что современный родитель — это сверхчеловек с расширенными надстройками многозадачности. Нам надо быть одновременно в нескольких местах.</div>
                 </div>
-                <div class="hero-service__img-wrap">
-                    <img src="./img/services-hero/service-1.png" alt="">
+                <div class="hero-service__video-wrap">
+                    <a href="#" class="hero-service__video video">
+                        <div class="video__preview">
+                            <img src="./img/home-hero.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('../blocks/team/team.html')
+    @@include('../blocks/partners/partners.html')
+
+    <div class="bg-light-gray">
+        @@include('../blocks/feedback/feedback.html')
+    </div>
+
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title partners__title" style="margin-bottom: 30px;">О нас пишут</h2>
+            <div class="partners__wrap">
+                <div class="partners__img"><img src="./img/press.png" alt=""></div>
+                <div class="partners__img"><img src="./img/press-1.png" alt=""></div>
+                <div class="partners__img"><img src="./img/press.png" alt=""></div>
+                <div class="partners__img"><img src="./img/press-1.png" alt=""></div>
             </div>
         </div>
     </section>
