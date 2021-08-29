@@ -4,7 +4,11 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
+@media (max-width: 767px) {
+  .container {
+    max-width: 350px;
+  }
+}
 .container-video {
   width: 100%;
   max-width: 980px;

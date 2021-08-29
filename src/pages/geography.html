@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  @@include('../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/common.css">
+  <title>География работы</title>
+</head>
+<body>
+@@include('../blocks/header/header.html')
+
+<main>
+  <section class="geography">
+    <div class="container">
+        <div class="geography__wrap">
+          <h1 class="geography__title">География работы</h1>
+          
+          <div class="geography__img-wrap">
+            <img src="../img/geography/geography.png" alt="" class="geography__img">               
+          </div>
+        </div>
+    </div>
+    @@include('../blocks/cta/cta.html', {
+      "heading": "Оставить заявку"
+    })
+  </section>
+  
+</main>
+
+@@include('../blocks/footer/footer.html')
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

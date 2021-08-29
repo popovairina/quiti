@@ -2,7 +2,7 @@
   background-color: $light-gray;
   padding: 29px 15px 135px 15px;
   &-container {
-    max-width: 820px;
+    max-width: 814px;
     width: 100%;
     margin: auto;
     .cta-button {
@@ -11,24 +11,67 @@
       margin-top: 58px;
     }
   }
+  @media (max-width: 767px) {
+    .profile {
+      &-container {
+        max-width: 359px;
+      }
+    }
+  }
   &-section {
     background-color: #fff;
     border: 0.5px solid $gray;
     box-sizing: border-box;
     border-radius: 10px;
-    padding: 35px 30px 50px 30px;
+    padding: 35px 30px 47px 30px;
     margin-bottom: 30px;
     &__photo {
-      margin-bottom: 29px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__photo {
+            margin-bottom: 16px;
+          }
+        }
+      }
     }
     &__btn {
       min-width: 272px;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__btn {
+            margin-bottom: 36px;
+          }
+        }
+      }
+    }
     &__about {
       max-width: 734px;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__about {
+            padding: 0 20px 30px 20px;
+          }
+        }
+      }
+    }
     &__image {
       width: 100%;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__image {
+            height: 279px;
+          }
+        }
+      }
     }
     &__name {
       font-family: $reg;
@@ -56,6 +99,15 @@
       color: $graphite;
       margin-bottom: 20px;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
     p {
       margin-bottom: 23px;
       &:last-child {
@@ -70,6 +122,15 @@
       line-height: 22px;
       color: $dark-gray;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
     &__caution {
       font-family: $reg;
       font-style: normal;
@@ -81,8 +142,32 @@
     }
     &__row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__row {
+            display: block;
+            text-align: center;
+            padding: 0 20px 0px 20px;
+          }
+        }
+      }
+    }
+    &__person {
+      text-align: start;
+      padding-top: 10px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__person {
+            padding-top: 0;
+          }
+        }
+      }
     }
     &__string {
       display: flex;
@@ -100,6 +185,16 @@
     &-features {
       column-count: 2;
       margin-bottom: 28px;
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &-features {
+            column-count: 1;
+            margin-bottom: 0;
+          }
+        }
+      }
     }
     &__img {
       width: 22px;
@@ -128,12 +223,56 @@
       line-height: 19px;
       color: $dark-gray;
     }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__review {
+            width: auto;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .profile {
+        &-section {
+          &__col {
+            &_date {
+              display: none;
+            }
+          }
+        }
+      }
+    }
     .all-reviews {
       text-align: center;
       margin-top: 50px;
     }
+    .sm-hidden {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .profile {
+      &-section {
+        padding: 26px 20px 30px 20px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .profile {
+      &-section {
+        &_mobile {
+          padding: 0;
+        }
+      }
+    }
   }
   &__cta-btn {
     min-width: 264px;
+  }
+}
+@media (max-width: 767px) {
+  .profile {
+    padding-bottom: 70px; 
   }
 }
