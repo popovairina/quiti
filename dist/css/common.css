@@ -2770,8 +2770,11 @@ a:hover {
 
 .pricelist-table {
   width: 100%;
-  margin-bottom: 16px;
   border-spacing: 0 !important;
+}
+
+.pricelist-table-wrap {
+  margin-bottom: 60px;
 }
 
 .pricelist-table .tr-gray {
@@ -3767,7 +3770,12 @@ a:hover {
   }
 
   .pricelist-table-wrap {
+    margin-bottom: 30px;
     overflow: scroll;
+  }
+
+  .pricelist-table {
+    width: 1145px;
   }
 
   .lab-container {

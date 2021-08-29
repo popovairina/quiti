@@ -231,11 +231,12 @@
   
   &-table {
     width: 100%;
-    margin-bottom: 16px;
     border-spacing: 0 !important;
     
     &-wrap {
+      margin-bottom: 60px;
       @media (max-width: 767px) {
+        margin-bottom: 30px;
         overflow: scroll;
       }
     }
@@ -294,6 +295,9 @@
           background-position: center;
         }
       }
+    }
+    @media (max-width: 767px) {
+      width: 1145px;
     }
   }
 
