@@ -144,5 +144,13 @@
     &__icon {
         display: block;
         margin-left: 8px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .socials {
+        justify-content: center;
     }
 }

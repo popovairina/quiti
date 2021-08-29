@@ -567,6 +567,10 @@ a:hover {
   margin-left: 8px;
 }
 
+.socials__icon:first-child {
+  margin-left: 0;
+}
+
 .icon-feature-navy {
   width: 88px;
   height: 88px;
@@ -2860,6 +2864,12 @@ a:hover {
     max-width: 350px;
   }
 
+  .socials {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .hero-service .hero-service__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3086,6 +3096,48 @@ a:hover {
 
   .service-rides .service-rides-cost {
     font-size: 16px;
+  }
+
+  .footer .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer__logo {
+    margin-bottom: 45px;
+  }
+
+  .footer .footer__privacy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer__col {
+    width: auto;
+  }
+
+  .footer .footer__nav {
+    margin-bottom: 40px;
+  }
+
+  .footer .footer__text {
+    margin-bottom: 22px;
+  }
+
+  .footer-contacts .footer-contacts__link {
+    margin-right: 0;
   }
 }
 
