@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   @@include('../blocks/favicon/favicon.html')
   <link rel="stylesheet" href="css/common.css">
-  <title>Сопровождение детей</title>
+  <title>Групповые поездки</title>
 </head>
 <body>
 @@include('../blocks/header/header.html')
@@ -18,16 +18,17 @@
             <div class="hero-service__wrap">
                 <div class="hero-service__info">
                     <h1 class="hero-service__title">Групповые поездки</h1>
-                    <div class="hero-service__text">Quiti - безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий. Сопровождаем детей, пока родители обеспечивают их будущее!                </div>
+                    <div class="hero-service__text">Групповые поездки в бассейн премиального фитнес центра - идеальный вариант с удовольствием и пользой устроить досуг для ваших малышей!</div>
                     <button class="btn">Оставить заявку</button>
                 </div>
                 <div class="hero-service__img-wrap">
-                    <img src="./img/services-hero/service-1.png" alt="">
+                    <img src="./img/services-hero/service-1.png" alt="" class="hero-service__img">
                 </div>
             </div>
         </div>
     </section>
 
+    @@include('../blocks/service-rides/service-rides.html')
     @@include('../blocks/feedback/feedback.html')
     @@include('../blocks/cta/cta.html', {
         "heading": "Не нашли ответ на свой вопрос? Свяжитесь с нами"
