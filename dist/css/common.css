@@ -3610,52 +3610,52 @@ a:hover {
     margin-bottom: 36px;
   }
 
-  .profile .profile-container {
+  .profile-container {
     max-width: 359px;
   }
 
-  .profile-section .profile-section__photo {
+  .profile-section__photo {
     margin-bottom: 16px;
   }
 
-  .profile-section .profile-section__btn {
+  .profile-section__btn {
     margin-bottom: 36px;
   }
 
-  .profile-section .profile-section__about {
+  .profile-section__about {
     padding: 0 20px 30px 20px;
   }
 
-  .profile-section .profile-section__image {
+  .profile-section__image {
     height: 279px;
   }
 
-  .profile-section .profile-section__title {
+  .profile-section__title {
     font-size: 20px;
   }
 
-  .profile-section .profile-section__text {
+  .profile-section__text {
     font-size: 14px;
   }
 
-  .profile-section .profile-section__row {
+  .profile-section__row {
     display: block;
     text-align: center;
     padding: 0 20px 0px 20px;
   }
 
-  .profile-section .profile-section__person {
+  .profile-section__person {
     padding-top: 0;
   }
 
-  .profile-section .profile-section-features {
+  .profile-section-features {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
     margin-bottom: 0;
   }
 
-  .profile-section .profile-section__review {
+  .profile-section__review {
     width: auto;
   }
 
@@ -3663,7 +3663,7 @@ a:hover {
     display: none;
   }
 
-  .profile .profile-section {
+  .profile-section {
     padding: 26px 20px 30px 20px;
   }
 
@@ -3709,34 +3709,34 @@ a:hover {
     margin-bottom: 18px;
   }
 
-  .reasons .reasons-container {
+  .reasons-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .reasons-list .reasons-list__item {
+  .reasons-list__item {
     font-size: 14px;
   }
 
-  .features .features-container {
+  .features-container {
     max-width: 350px;
   }
 
-  .features .features-title {
+  .features-title {
     margin-bottom: 40px;
   }
 
-  .features .features__text {
+  .features__text {
     width: 238px;
   }
 
-  .features .features-cost {
+  .features-cost {
     font-size: 16px;
   }
 
-  .albums .albums-container {
+  .albums-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -3749,24 +3749,28 @@ a:hover {
     align-items: center;
   }
 
-  .albums .albums-descr {
+  .albums-descr {
     margin-right: 0;
   }
 
-  .albums .albums-title {
+  .albums-title {
     margin-bottom: 30px;
     font-size: 28px;
   }
 
-  .albums .albums-preview {
+  .albums-preview {
     margin-bottom: 40px;
   }
 
-  .albums-list .albums-list__item {
+  .albums-list__item {
     width: auto;
   }
 
-  .lab .lab-container {
+  .pricelist-table-wrap {
+    overflow: scroll;
+  }
+
+  .lab-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -3776,46 +3780,46 @@ a:hover {
     align-items: center;
   }
 
-  .lab .lab-descr {
+  .lab-descr {
     margin-right: 0;
   }
 
-  .lab .lab-title {
+  .lab-title {
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 32px;
   }
 
-  .lab .lab-text {
+  .lab-text {
     width: auto;
     margin-bottom: 30px;
   }
 
-  .lab .lab-text:last-child {
+  .lab-text:last-child {
     margin-bottom: 0;
   }
 
-  .lab .lab-preview {
+  .lab-preview {
     margin-bottom: 36px;
   }
 
-  .service-rides .service-rides-container {
+  .service-rides-container {
     max-width: 350px;
   }
 
-  .service-rides .service-rides-title {
+  .service-rides-title {
     margin-bottom: 40px;
   }
 
-  .service-rides .service-rides-block {
+  .service-rides-block {
     margin-bottom: 40px;
   }
 
-  .service-rides .service-rides__text {
+  .service-rides__text {
     width: 238px;
   }
 
-  .service-rides .service-rides-cost {
+  .service-rides-cost {
     font-size: 16px;
   }
 
