@@ -5,17 +5,48 @@
         align-items: center;
         justify-content: space-between;
     }
+    @media (max-width: 767px) {
+        .hero-service {
+            &__wrap {
+                flex-direction: column-reverse;
+            }
+        }
+    }
     &__title {
         margin-bottom: 36px;
     }
     &__info {
         width: 45%;
     }
+    @media (max-width: 767px) {
+        .hero-service {
+            &__info {
+                width: 100%;
+            }
+        }
+    }
     &__text {
         margin-bottom: 34px;
         font-family: $reg;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         color: $dark-gray;
+    }
+    @media (max-width: 767px) {
+        .hero-service {
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .hero-service {
+            &__img-wrap {
+                margin-bottom: 36px;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
     }
 }
