@@ -2,7 +2,8 @@
   &-tags {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 72px;
+    flex-wrap: wrap;
+    margin-bottom: 62px;
   }
   &-tag {
     background-color: $white;
@@ -16,6 +17,7 @@
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 19px;
+    margin-bottom: 10px;
     transition: all .3s ease;
     cursor: pointer;
     &__link {
