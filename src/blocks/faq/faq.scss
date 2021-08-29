@@ -4,6 +4,10 @@
         margin-bottom: 54px;
         &-main {
             margin-bottom: 88px;
+            
+            @media (max-width: 767px) {
+                margin-bottom: 45px;
+            }
         }
     }
     &__acc {
@@ -13,6 +17,10 @@
 
 .faq-main {
     padding-bottom: 110px;
+    
+    @media (max-width: 767px) {
+        padding-bottom: 85px;
+    }
     .faq-acc {
         margin-bottom: 0;
     }
@@ -48,6 +56,11 @@
             background-size: contain;
             background-image: url("data:image/svg+xml,%3Csvg width='32' height='18' viewBox='0 0 32 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31 1.5L16 16.5L1 1.5' stroke='%2336BCBB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
         }
+
+        @media (max-width: 767px) {
+            padding: 20px 20% 20px 0;
+            font-size: 16px;
+        }
     }
     &__content {
         overflow: hidden;
@@ -60,6 +73,10 @@
         line-height: 22px;
         color: #3C3C3C;
         transition: all .5s ease;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
     &__item[data-open] {
         padding-bottom: 30px;

@@ -10,12 +10,8 @@
       justify-content: center;
       margin-top: 58px;
     }
-  }
-  @media (max-width: 767px) {
-    .profile {
-      &-container {
-        max-width: 359px;
-      }
+    @media (max-width: 767px) {
+      max-width: 359px;
     }
   }
   &-section {
@@ -27,50 +23,26 @@
     margin-bottom: 30px;
     &__photo {
       margin-bottom: 32px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__photo {
-            margin-bottom: 16px;
-          }
-        }
+      @media (max-width: 767px) {
+        margin-bottom: 16px;
       }
     }
     &__btn {
       min-width: 272px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__btn {
-            margin-bottom: 36px;
-          }
-        }
+      @media (max-width: 767px) {
+        margin-bottom: 36px;
       }
     }
     &__about {
       max-width: 734px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__about {
-            padding: 0 20px 30px 20px;
-          }
-        }
+      @media (max-width: 767px) {
+        padding: 0 20px 30px 20px;
       }
     }
     &__image {
       width: 100%;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__image {
-            height: 279px;
-          }
-        }
+      @media (max-width: 767px) {
+        height: 279px;
       }
     }
     &__name {
@@ -98,14 +70,8 @@
       line-height: 27px;
       color: $graphite;
       margin-bottom: 20px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__title {
-            font-size: 20px;
-          }
-        }
+      @media (max-width: 767px) {
+        font-size: 20px;
       }
     }
     p {
@@ -121,14 +87,8 @@
       font-size: 18px;
       line-height: 22px;
       color: $dark-gray;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__text {
-            font-size: 14px;
-          }
-        }
+      @media (max-width: 767px) {
+        font-size: 14px;
       }
     }
     &__caution {
@@ -144,29 +104,17 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__row {
-            display: block;
-            text-align: center;
-            padding: 0 20px 0px 20px;
-          }
-        }
+      @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+        padding: 0 20px 0px 20px;
       }
     }
     &__person {
       text-align: start;
       padding-top: 10px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__person {
-            padding-top: 0;
-          }
-        }
+      @media (max-width: 767px) {
+        padding-top: 0;
       }
     }
     &__string {
@@ -185,15 +133,9 @@
     &-features {
       column-count: 2;
       margin-bottom: 28px;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &-features {
-            column-count: 1;
-            margin-bottom: 0;
-          }
-        }
+      @media (max-width: 767px) {
+        column-count: 1;
+        margin-bottom: 0;
       }
     }
     &__img {
@@ -222,14 +164,8 @@
       font-size: 16px;
       line-height: 19px;
       color: $dark-gray;
-    }
-    @media (max-width: 767px) {
-      .profile {
-        &-section {
-          &__review {
-            width: auto;
-          }
-        }
+      @media (max-width: 767px) {
+        width: auto;
       }
     }
     @media (max-width: 767px) {
@@ -247,12 +183,8 @@
       text-align: center;
       margin-top: 50px;
     }
-  }
-  @media (max-width: 767px) {
-    .profile {
-      &-section {
-        padding: 26px 20px 30px 20px;
-      }
+    @media (max-width: 767px) {
+      padding: 26px 20px 30px 20px;
     }
   }
   @media (max-width: 767px) {
@@ -267,9 +199,7 @@
   &__cta-btn {
     min-width: 264px;
   }
-}
-@media (max-width: 767px) {
-  .profile {
-    padding-bottom: 70px; 
+  @media (max-width: 767px) {
+    padding-bottom: 70px;
   }
 }

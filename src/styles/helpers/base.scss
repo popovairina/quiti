@@ -40,6 +40,10 @@ ol {
 main.page {
   padding-top: 82px;
   padding-bottom: 106px;
+  @media (max-width: 767px) {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
 }
 
 .pb-0 {

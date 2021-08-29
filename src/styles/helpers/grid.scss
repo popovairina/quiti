@@ -3,9 +3,7 @@
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-}
-@media (max-width: 767px) {
-  .container {
+  @media (max-width: 767px) {
     max-width: 350px;
   }
 }
@@ -24,6 +22,8 @@
   width: calc(100% / 12 * 4 - 32px);
   margin: 0 16px;
 }
-.sm-hidden {
-  display: none;
+@media (max-width: 767px) {
+  .sm-hidden {
+    display: none;
+  }
 }
