@@ -1,0 +1,45 @@
+.team {
+    padding: 48px 0 123px;
+    &__title {
+        margin-bottom: 42px;
+    }
+    &__main-photo {
+        margin-bottom: 96px;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px -100px;
+    }
+    &__member {
+        margin: 0 16px 100px;
+        width: calc(100% / 3 - 32px);
+        text-align: center;
+    }
+    &__member-img {
+        margin: 0 auto 32px;
+        width: 227px;
+        height: 227px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        font-family: $reg;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $graphite;
+    }
+    &__job {
+        font-family: $reg;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: $dark-gray;
+    }
+}
