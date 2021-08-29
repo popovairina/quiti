@@ -1,29 +1,37 @@
 .profile-tag {
-    padding: 4px 10px;
-    width: fit-content;
-    text-align: center;
-    font-family: $reg;
-    font-size: 14px;
-    line-height: 24px;
-    color: $dark-gray;
-    background-color: #FFFFFF;
-    border: 0.5px solid $gray;
-    box-sizing: border-box;
-    border-radius: 10px;
-    strong {
-        color: $graphite !important;
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $reg;
+  text-align: center;
+  color: $dark-gray;
+  background-color: #ffffff;
+  border: 0.5px solid $gray;
+  border-radius: 10px;
+
+  strong {
+    color: $graphite !important;
+  }
+
+  &_big {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 4px 18px;
+    font-size: 20px;
+
+    @media (max-width: 767px) {
+      margin-top: 16px;
     }
-    &_big {
-        padding: 4px 18px;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-    &_bold {
-        font-weight: bold;
-    }
-    &_green {
-        border-color: $accent;
-        color: $accent;
-    }
+  }
+
+  &_bold {
+    font-weight: bold;
+  }
+
+  &_green {
+    color: $accent;
+    border-color: $accent;
+  }
 }
