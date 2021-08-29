@@ -1,8 +1,8 @@
 .container {
-  max-width: 1170px;
   width: 100%;
-  padding: 0 15px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 @media (max-width: 767px) {
   .container {
@@ -10,10 +10,10 @@
   }
 }
 .container-video {
-  max-width: 980px;
   width: 100%;
-  padding: 0 15px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .row {
   display: flex;

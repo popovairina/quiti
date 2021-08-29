@@ -1,15 +1,15 @@
 .service-photo-cta {
   background-color: $white;
 }
+
 .reasons {
   background-color: $light-gray;
   padding-top: 75px;
   padding-bottom: 50px;
   &-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
   }
+
   @media (max-width: 767px) {
     .reasons {
       &-container {
@@ -23,26 +23,29 @@
       width: 100%;
     }
   }
+
   &-descr {
     flex-basis: 50%;
     padding-top: 14px;
   }
+
   &-title {
-    font-family: $reg;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    color: $navy;
-    margin-bottom: 50px;
+    font-family: $reg;
   }
+
   &-list {
-    padding: 0;
-    margin-left: 20px;
+    margin-left: 18px;
     &__item {
-      font-family: $reg;
+      margin-bottom: 31px;
+      list-style: auto;
       font-weight: 400;
       font-size: 16px;
-      line-height: 130%;
+      line-height: 1.315;
+      font-family: $reg;
       color: $graphite;
       list-style: auto;
       margin-bottom: 35px;
@@ -58,19 +61,21 @@
     }
   }
 }
-.features {
-  background-color: $white;
+
+.features-services {
   padding-top: 56px;
   padding-bottom: 50px;
+  background-color: $white;
+
   &-container {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
     padding-right: 15px;
     padding-left: 15px;
-    max-width: 980px;
-    width: 100%;
-    margin: auto;
   }
   @media (max-width: 767px) {
-    .features {
+    .features-services {
       &-container {
         max-width: 350px;
       }
@@ -86,55 +91,56 @@
       }
     }
   }
+
   &-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 51px;
   }
+
   &__string {
-    flex-basis: 47%;
     display: flex;
+    flex-basis: 47%;
     align-items: flex-start;
     margin-bottom: 26px;
   }
+
   &__img {
     width: 24px;
     height: 25px;
+    margin-top: 5px;
+    margin-right: 18px;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.0993 23.8967C8.3598 23.8967 7.6594 23.5516 7.2106 22.9566L1.1365 14.9309C0.948706 14.683 0.811605 14.4006 0.733033 14.0997C0.654462 13.7988 0.635962 13.4854 0.67859 13.1774C0.721219 12.8693 0.824139 12.5727 0.981469 12.3045C1.1388 12.0363 1.34745 11.8017 1.5955 11.6142C1.84346 11.4258 2.12615 11.2883 2.42736 11.2094C2.72857 11.1306 3.04238 11.1119 3.35082 11.1546C3.65925 11.1972 3.95623 11.3003 4.22475 11.4579C4.49326 11.6156 4.72803 11.8246 4.9156 12.0732L8.9123 17.35L18.961 1.21356C19.2943 0.680776 19.8252 0.301926 20.4374 0.160107C21.0497 0.0182878 21.6931 0.125079 22.2267 0.457057C23.3368 1.14726 23.6785 2.60926 22.9849 3.72106L11.1121 22.7781C10.9094 23.1048 10.6301 23.3772 10.2983 23.5715C9.96646 23.7659 9.59225 23.8763 9.2081 23.8933C9.1707 23.8967 9.1367 23.8967 9.0993 23.8967Z' fill='%2336BCBB'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    margin-right: 18px;
-    margin-top: 5px;
   }
+
   &__text {
     width: 410px;
-    font-family: $reg;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    color: #000;
+    font-family: $reg;
+    color: #000000;
   }
   @media (max-width: 767px) {
-    .features {
+    .features-services {
       &__text {
         width: 238px;
       }
     }
   }
   &-cost {
-    font-family: $reg;
+    margin-bottom: 18px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: $dark-gray;
+    font-family: $reg;
     text-align: center;
-    margin-bottom: 18px;
-    &_navy {
-      color: $navy;
-    }
+    color: $dark-gray;
   }
   @media (max-width: 767px) {
-    .features {
+    .features-services {
       &-cost {
         font-size: 16px;
       }
@@ -144,14 +150,15 @@
     text-align: center;
   }
 }
+
 .albums {
   background-color: $light-gray;
   padding-top: 80px;
   padding-bottom: 81px;
   &-container {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
   }
   @media (max-width: 767px) {
     .albums {
@@ -174,12 +181,12 @@
     }
   }
   &-title {
-    font-family: $add;
+    margin-bottom: 40px;
     font-weight: 800;
     font-size: 52px;
     line-height: 61px;
+    font-family: $add;
     color: $graphite;
-    margin-bottom: 40px;
   }
   @media (max-width: 767px) {
     .albums {
@@ -202,12 +209,13 @@
       }
     }
   }
+
   &-list {
     margin-left: 33px;
     &__item {
       width: 500px;
-      list-style: disc;
       margin-bottom: 31px;
+      list-style: disc;
     }
     @media (max-width: 767px) {
       .albums {
@@ -221,63 +229,75 @@
     &__item:last-child {
       margin-bottom: 0;
     }
+
     &__text {
-      font-family: $reg;
       font-weight: 400;
       font-size: 16px;
       line-height: 130%;
+      font-family: $reg;
       color: $graphite;
     }
   }
 }
+
 .pricelist {
-  background-color: $white;
   padding-top: 48px;
   padding-bottom: 80px;
   &-title {
     margin-bottom: 40px;
   }
+
   &-table {
     width: 100%;
     margin-bottom: 16px;
     border-spacing: 0 !important;
+
     .tr-gray {
       background-color: $light-gray;
     }
+
     .tr-white {
       background-color: $white;
     }
+
     .td-top {
-      border: 1px solid $blue;
       padding: 20px 25px;
+      border: 1px solid $blue;
+
       &_big {
         width: 42%;
       }
+
       &_small {
         width: 14%;
       }
     }
+
     .td-small {
-      text-align: center;
       padding: 20px 25px;
+      text-align: center;
     }
+
     td {
-      padding: 20px 0px 20px 25px;
+      padding: 20px 0 20px 25px;
+
       .td {
         &-title {
-          font-family: $reg;
           font-weight: 700;
           font-size: 18px;
           line-height: 22px;
+          font-family: $reg;
           color: $graphite;
         }
+
         &-text {
-          font-family: $reg;
           font-weight: 400;
           font-size: 18px;
           line-height: 22px;
+          font-family: $reg;
           color: $graphite;
         }
+
         &-marked {
           width: 100%;
           height: 16px;
@@ -288,18 +308,19 @@
       }
     }
   }
+
   &-btn {
     text-align: center;
   }
 }
+
 .lab {
-  background-color: $light-gray;
   padding-top: 83px;
   padding-bottom: 97px;
   &-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   @media (max-width: 767px) {
     .lab {
@@ -321,12 +342,12 @@
     }
   }
   &-title {
-    font-family: $add;
+    margin-bottom: 40px;
     font-weight: 800;
     font-size: 52px;
     line-height: 61px;
+    font-family: $add;
     color: $graphite;
-    margin-bottom: 40px;
   }
   @media (max-width: 767px) {
     .lab {
@@ -339,12 +360,13 @@
   }
   &-text {
     width: 460px;
-    font-family: $reg;
+    margin-bottom: 50px;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+    font-family: $reg;
     color: $graphite;
-    margin-bottom: 50px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -371,17 +393,20 @@
     }
   }
 }
+
 .process {
-  background-color: $light-gray;
   padding-top: 60px;
   padding-bottom: 73px;
+  background-color: $light-gray;
+
   &-container {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
     padding-right: 15px;
     padding-left: 15px;
-    max-width: 980px;
-    width: 100%;
-    margin: auto;
   }
+
   &-title {
     margin-bottom: 20px;
   }

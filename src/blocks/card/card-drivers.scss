@@ -1,0 +1,66 @@
+.card-drivers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 362px;
+  height: auto;
+  padding: 29px 41px;
+  text-align: center;
+  background: #ffffff;
+  border: 0.5px solid #aaaaaa;
+  border-radius: 10px;
+
+  &__photo {
+    display: block;
+    width: 179px;
+    height: 179px;
+    margin: 0 auto 16px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: $reg;
+    color: #000000;
+  }
+
+  &__exp-title,
+  &__feedback {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $reg;
+    color: $dark-gray;
+  }
+
+  &__exp-number {
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.5;
+    font-family: $reg;
+    color: $navy;
+  }
+
+  &__feedback {
+    margin-bottom: 44px;
+  }
+
+  &__link {
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $reg;
+    color: $graphite;
+  }
+}

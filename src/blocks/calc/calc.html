@@ -1,0 +1,117 @@
+<section class="calc">
+    <div class="container">
+        <h2 class="section-title calc__title tac">Калькулятор</h2>
+        <h3 class="title-32 calc__subtitle tac">Наш калькулятор поможет рассчитать приблизительную стоимость сопровождения</h3>
+        <form class="calc-form" action="/action_page.php">  
+            <div class="row">
+              <div class="col-12 tac">
+                  <div class="calc-form__transit">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="driving-radio" value="driving" checked="">
+                        <label class="form-check-label" for="driving-radio"><span>На машине</span></label>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="transit-radio" value="transit">
+                        <label class="form-check-label" for="transit-radio"><span>Пешком</span></label>
+                  </div>
+              </div>
+            </div>  
+  
+  
+            
+            <div class="row">
+              <div class="calc-form__input-group form-group col-sm-6">
+                <label class="calc-form__label" id="fromLabel">Пункт отправления</label>
+                <div class="input-group">
+                  <input type="text" class="form-control not-rounded ui-autocomplete-input" id="from1" placeholder="Откуда" name="departure_address" was-selected="true" autocomplete="off">
+                  <div class="input-group-append ">
+                    <button class="calc-form__location-btn" type="button" data-toggle="modal" data-target="#mapModal" data-lat="55.750283" data-lng="37.623976"> 
+                      <i class="fa fa-map-marker"></i>
+                    </button>
+                  </div>
+                </div>
+                <ul class="list-inline float-right">
+                  <li class="list-inline-item d-none">
+                    <button type="button" class="btn btn-primary btn-xs btn-quest" data-toggle="popover" title="" data-content="Вы можете ввести адрес вручную и выбрать его из предложенных вариантов, а можете указать точку на карте, нажав на красный значок" data-original-title="Укажите адрес">
+                      ?
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="calc-form__input-group form-group col-sm-6">
+                <label class="calc-form__label" id="fromDTPLabel">Время отправления</label>
+                <div class="input-group date">
+                  <input type="text" class="form-control calc-form__input-date" id="datetimepicker" placeholder="Дата и время" name="departure_time" autocomplete="off">
+                  <span class="input-group-addon">
+                    <span class="glyphicon-calendar glyphicon"></span>
+                  </span>
+                </div>
+                <ul class="list-inline float-right">
+                  <li class="list-inline-item d-none">
+                    <button type="button" class="btn btn-primary btn-xs btn-quest " data-toggle="popover" title="" data-content="Вы можете указать либо время отправления, либо время прибытия. Второе значение будет рассчитано автоматически. Если нужно дополнительно посидеть с ребёнком – просто добавьте время в нужную сторону." data-original-title="Укажите дату и время">
+                      ?
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+             <!-- /From-block -->
+  
+            <!-- Where-block -->
+  
+            <div class="row whereBlock" id="whereBlock1">
+              <div class="calc-form__input-group form-group col-sm-6">
+                <label class="calc-form__label" for="where1">Пункт прибытия</label>
+                <div class="input-group">
+                  <input type="text" class="form-control not-rounded ui-autocomplete-input" id="where1" placeholder="Куда" name="arrival_address1" was-selected="false" required="" autocomplete="off">
+                  <div class="input-group-append">
+                    <button class="calc-form__location-btn" type="button" data-toggle="modal" data-target="#mapModal" data-lat="55.750283" data-lng="37.623976">
+                      <i class="fa fa-map-marker"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-form__input-group form-group col-sm-6">
+                <label class="calc-form__label" for="datetimepicker1">Время прибытия</label>
+                <div class="input-group date">
+                  <input type="text" class="form-control calc-form__input-date" id="datetimepicker1" placeholder="Дата и время" name="arrival_time1" autocomplete="off" required="">
+                  <span class="input-group-addon">
+                    <span class="glyphicon-calendar glyphicon"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+  
+            <!-- /Where-block -->
+  
+            <!-- Add Button -->
+  
+            <button type="button" class="btn d-none" id="addButton" onclick="addDestination(this)" disabled="disabled">
+              Добавить маршрут
+            </button>
+  
+            <!-- /Add Button -->
+  
+            <div class="row">
+                <div class="col-12 calc-form__sum">
+                  <div class="calc-form__sum-title">Ориентировочная стоимость:</div>
+                  <div class="calc-form__sum-number" id="priceSum">0 ₽</div>
+                </div>
+                <div class="col-12 calc-form__question">
+                    <div class="calc-form__question-text">Возможные скидки</div>
+                    <button type="button" class="calc-form__question-btn" data-toggle="popover" data-html="true" 
+                        data-content="5% - пробная поездка<br/> <!-- 10% - при оформлении сопровождения в течение квартала <br/> --> 30% - счастливый час<br/> 100% - в день рождения наших клиентов">
+                    </button>
+                </div>
+              </div>
+            
+                  
+             <div class="col-sm-12 text-center">
+                <button type="button" class="calc__submit btn" id="orderButton" disabled="disabled"> отправить заявку</button>
+              </div>
+                  
+            </div>
+  
+            <!-- /Agreement -->
+  
+        </form>
+    </div>
+</section>

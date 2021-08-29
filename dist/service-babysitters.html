@@ -21,8 +21,11 @@
 <meta name="msapplication-TileImage" content="favicons//mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/common.css">
-  <title>Сопровождение детей</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+  <title>Подбор бэбиситтеров</title>
 </head>
 <body>
 <header class="header">
@@ -47,22 +50,185 @@
     </div>
 </header>
 
-<main class="page">
+<main class="">
 
     <section class="hero-service">
         <div class="container">
             <div class="hero-service__wrap">
                 <div class="hero-service__info">
-                    <h1 class="hero-service__title">Подбор бэбиситтеров</h1>
+                    <h1 class="hero-service__title">Подбор бебиситтеров</h1>
                     <div class="hero-service__text">Quiti - безопасное перемещение Вашего ребенка по городу и своевременное посещение дополнительных занятий. Сопровождаем детей, пока родители обеспечивают их будущее!                </div>
                     <button class="btn">Оставить заявку</button>
                 </div>
                 <div class="hero-service__img-wrap">
-                    <img src="./img/services-hero/service-1.png" alt="">
+                    <img src="./img/services-hero/babysitter.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="babysitters bg-light-gray">
+    <div class="container">
+        <form class="babysitters-filter">
+            <div class="babysitters-filter__item">
+                <label for="select-district" class="babysitters-filter__label">Район</label>
+                <select name="district" id="select-district" class="babysitters-filter__select">
+                    <option value="Люблино">Люблино</option>
+                    <option value="Люблино">Люблино1</option>
+                    <option value="Люблино">Люблино2</option>
+                    <option value="Люблино">Люблино3</option>
+                    <option value="Люблино">Люблино4</option>
+                </select>
+            </div>
+            <div class="babysitters-filter__item">
+                <label for="select-district" class="babysitters-filter__label">Возраст бебиситтера</label>
+                <select name="district" id="select-district" class="babysitters-filter__select">
+                    <option value="18 - 21">18 - 21</option>
+                    <option value="18 - 21">18 - 21</option>
+                    <option value="18 - 21">18 - 21</option>
+                </select>
+            </div>
+            <div class="babysitters-filter__item">
+                <label for="select-district" class="babysitters-filter__label">Стоимость</label>
+                <select name="district" id="select-district" class="babysitters-filter__select">
+                    <option value="300 ₽ в час">300 ₽ в час</option>
+                    <option value="300 ₽ в час">300 ₽ в час</option>
+                    <option value="300 ₽ в час">300 ₽ в час</option>
+                </select>
+            </div>
+            <div class="babysitters-filter__item">
+                <label for="select-district" class="babysitters-filter__label">Время</label>
+                <select name="district" id="select-district" class="babysitters-filter__select">
+                    <option value="Утренние часы">Утренние часы</option>
+                    <option value="Дневные часы">Дневные часы</option>
+                    <option value="Вечерние часы">Вечерние часы</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="babysitters-results">
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__overlay-tags">
+                    <div class="card-babysitters__overlay-tag">Новый бейбиситтер</div>
+                </div>
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-1.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__overlay-tags">
+                    <div class="card-babysitters__overlay-tag">Новый бейбиситтер</div>
+                </div>
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-2.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-3.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__overlay-tags">
+                    <div class="card-babysitters__overlay-tag">Новый бейбиситтер</div>
+                </div>
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-1.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__overlay-tags">
+                    <div class="card-babysitters__overlay-tag">Новый бейбиситтер</div>
+                </div>
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-2.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-3.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__overlay-tags">
+                    <div class="card-babysitters__overlay-tag">Новый бейбиситтер</div>
+                </div>
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-2.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+            <a href="./profile.html" class="card-babysitters">
+                <div class="card-babysitters__photo">
+                    <img src="./img/sitters/sitter-3.jpg" alt="">
+                </div>
+                <div class="card-babysitters__body">
+                    <span class="card-babysitters__name">Оксана Е.</span>
+                    <span class="card-babysitters__age">21 лет</span>
+                    <div class="card-babysitters__tags">
+                        <div class="profile-tag profile-tag_green profile-tag_bold">300 ₽ в час</div>
+                        <div class="profile-tag"><strong>28</strong> часов с детьми</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
     
 </main>
 
@@ -75,7 +241,7 @@
             <div class="footer__col">
                 <nav class="footer__nav">
                     <ul>
-                        <li><a href="#">Калькулятор сопровождения </a></li>
+                        <li><a href="./calculation.html">Калькулятор сопровождения </a></li>
                         <li><a href="./partnership.html">Сотрудничество </a></li>
                         <li><a href="./blog.html">Блог Quiti </a></li>
                         <li><a href="./feedback-video.html">Видео отзывы</a></li>
