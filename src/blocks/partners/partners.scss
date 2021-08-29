@@ -1,0 +1,12 @@
+.partners {
+    padding: 62px 80px;
+    &__title {
+        text-align: left;
+        margin-bottom: 52px;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+}
