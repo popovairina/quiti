@@ -1,7 +1,13 @@
 .news {
     padding: 74px 0 94px;
+    @media (max-width: 767px) {
+        padding: 37px 0 46px;
+    }
     &__title {
         margin-bottom: 53px;
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
     }
     &__wrap {
         display: flex;
@@ -23,6 +29,11 @@
             width: 100%;
             margin: 0;
             margin-bottom: 25px;
+        }
+        &:last-child {
+            @media (max-width: 767px) {
+                margin-bottom: 40px;
+            }
         }
     }
 }

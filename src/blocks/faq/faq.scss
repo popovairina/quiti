@@ -1,7 +1,17 @@
 .faq {
     padding: 70px 0 95px;
+
+    @media (max-width: 767px) {
+        padding: 28px 0 47px;
+    }
+
     &__title {
         margin-bottom: 54px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 32px;
+        }
+
         &-main {
             margin-bottom: 88px;
             
@@ -12,6 +22,10 @@
     }
     &__acc {
         margin-bottom: 54px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 37px;
+        }
     }
 }
 

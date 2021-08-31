@@ -101,6 +101,10 @@ h2 {
   line-height: 45px;
   font-family: $add;
   color: $graphite;
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 a {
@@ -147,6 +151,10 @@ a {
 
 .section {
   padding: 60px 0;
+
+  @media (max-width: 767px) {
+    padding-bottom: 18px;
+  }
 }
 
 .text-26 {

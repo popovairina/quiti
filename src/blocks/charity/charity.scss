@@ -3,10 +3,19 @@
     &__wrap {
         display: flex;
         align-items: flex-start;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
     &__logo {
         flex-shrink: 0;
         margin-right: 70px;
+        @media (max-width: 767px) {
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
     }
     &__body {
         flex-grow: 1;
@@ -20,11 +29,24 @@
         font-size: 14px;
         line-height: 17px;
         color: $dark-gray;
+        @media (max-width: 767px) {
+            margin: auto;
+            margin-bottom: 17px;
+        }
     }
     &__title {
         margin-bottom: 41px;
+        @media (max-width: 767px) {
+            margin-bottom: 35px;
+        }
     }
     &__btn {
         margin-right: 53px;
+        @media (max-width: 767px) {
+            display: block;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 35px;
+        }
     }
 }

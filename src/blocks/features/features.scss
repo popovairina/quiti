@@ -2,6 +2,10 @@
     &_home {
         padding: 41px 0 18px;
         background-color: transparent;
+
+        @media (max-width: 767px) {
+            padding: 13px 0 0;
+        }
     }
     &_section {
         padding: 49px 0 84px;
@@ -12,6 +16,10 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
     &__card {
         padding: 33px 20px 24px;
@@ -19,9 +27,23 @@
         width: 19.3%;
         max-width: 220px;
         margin-bottom: 15px;
+
+        @media (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 100%;
+            padding: 24px 5px 26px 28px;
+        }
     }
     &__icon {
         margin: 0 auto 20px;
+
+        @media (max-width: 767px) {
+            flex-shrink: 0;
+            margin: 0 25px 0 0;
+        }
     }
     &__desc {
         font-family: $reg;
@@ -31,5 +53,9 @@
         line-height: 19px;
         text-align: center;
         color: $dark-gray;
+
+        @media (max-width: 767px) {
+            text-align: left;
+        }
     }
 }
