@@ -120,6 +120,28 @@
   }
 }
 
+.charity__btn-wrap .link-arrow::after {
+  @media (max-width: 921px) {
+    right: 3px;
+  }
+
+  @media (max-width: 767px) {
+    right: 3px;
+  }
+}
+
+.charity__btn-wrap .link-arrow:hover::after {
+  right: -3px;
+
+  @media (max-width: 921px) {
+    right: -3px;
+  }
+
+  @media (max-width: 767px) {
+    right: -3px;
+  }
+}
+
 .link {
   position: relative;
 

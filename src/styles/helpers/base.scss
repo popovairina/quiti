@@ -153,6 +153,7 @@ a {
   padding: 60px 0;
 
   @media (max-width: 767px) {
+    padding-top: 53px;
     padding-bottom: 18px;
   }
 }
@@ -164,6 +165,10 @@ a {
   font-family: $reg;
   text-align: center;
   color: #3c3c3c;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }
 
 .title-32 {

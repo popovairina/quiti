@@ -495,6 +495,10 @@ a:hover {
   right: -3px;
 }
 
+.charity__btn-wrap .link-arrow:hover::after {
+  right: -3px;
+}
+
 .link {
   position: relative;
   font-weight: normal;
@@ -4003,6 +4007,14 @@ a:hover {
     right: 74px;
   }
 
+  .charity__btn-wrap .link-arrow::after {
+    right: 3px;
+  }
+
+  .charity__btn-wrap .link-arrow:hover::after {
+    right: -3px;
+  }
+
   .card-service {
     height: auto;
   }
@@ -4057,7 +4069,12 @@ a:hover {
   }
 
   .section {
+    padding-top: 53px;
     padding-bottom: 18px;
+  }
+
+  .text-26 {
+    font-size: 20px;
   }
 
   .container {
@@ -4078,6 +4095,14 @@ a:hover {
 
   .link-arrow:hover::after {
     right: 84px;
+  }
+
+  .charity__btn-wrap .link-arrow::after {
+    right: 3px;
+  }
+
+  .charity__btn-wrap .link-arrow:hover::after {
+    right: -3px;
   }
 
   .icon-feature-navy {
@@ -4266,6 +4291,14 @@ a:hover {
     width: 100%;
   }
 
+  .calc-offer {
+    padding-top: 44px;
+  }
+
+  .calc-offer__text {
+    margin-bottom: 45px;
+  }
+
   .features_home {
     padding: 13px 0 0;
   }
@@ -4300,6 +4333,10 @@ a:hover {
 
   .features__desc {
     text-align: left;
+  }
+
+  .why-us__text {
+    font-size: 14px;
   }
 
   .why-us__wrap {
@@ -4700,7 +4737,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .hero_home {
-    padding: 193px 0 52px;
+    padding: 193px 0 34px;
   }
 
   .hero__btn-wrap .btn {

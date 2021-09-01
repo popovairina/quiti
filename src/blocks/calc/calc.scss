@@ -1,6 +1,10 @@
 .calc-offer {
   padding: 52px 0 57px;
 
+  @media (max-width: 767px) {
+    padding-top: 44px;
+  }
+
   &__title {
     margin-bottom: 10px;
   }
@@ -8,6 +12,10 @@
   &__text {
     max-width: 800px;
     margin: 0 auto 30px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 45px;
+    }
   }
 
   &_decor {
