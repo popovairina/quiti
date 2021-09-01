@@ -4024,6 +4024,32 @@ a:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  .cta-contacts_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .cta-contacts__link {
+    font-size: 20px;
+  }
+
+  .contacts {
+    padding-top: 45px;
+  }
+
+  .contacts-title {
+    margin-bottom: 35px;
+  }
+
+  .map-info {
+    position: static;
+  }
+}
+
 @media (max-width: 1023px) {
   .text-26 {
     font-size: 20px;
@@ -4163,6 +4189,16 @@ a:hover {
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .map-info__title {
+    width: auto;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .map-info__address {
+    width: auto;
   }
 
   .reasons-container {
@@ -4883,6 +4919,17 @@ a:hover {
   .cta .cta-form__btn {
     margin-right: 0;
     margin-bottom: 18px;
+  }
+
+  .map-info__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .map-info__address {
+    width: auto;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .bs-container {

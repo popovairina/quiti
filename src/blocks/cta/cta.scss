@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     @media (max-width: 1023px) {
       flex-direction: column;
       max-width: 500px;
@@ -18,21 +19,23 @@
 
   &__title {
     max-width: 480px;
+    margin-right: 30px;
     font-weight: bold;
     font-size: 46px;
     line-height: 54px;
     font-family: $add;
     letter-spacing: -0.3px;
-    margin-right: 30px;
+
     @media (max-width: 1199px) {
+      margin-bottom: 40px;
       font-size: 38px;
       line-height: 42px;
-      margin-bottom: 40px;
     }
+
     @media (max-width: 767px) {
+      margin-bottom: 40px;
       font-size: 26px;
       line-height: 33px;
-      margin-bottom: 40px;
     }
   }
 
@@ -48,6 +51,7 @@
     max-width: 552px;
     margin-top: -9px;
     padding-right: 26px;
+
     @media (max-width: 767px) {
       padding-right: 0;
     }
@@ -91,6 +95,7 @@
       &::placeholder {
         color: $dark-gray;
       }
+
       @media (max-width: 767px) {
         margin-bottom: 23px;
       }
@@ -99,6 +104,7 @@
     &__textarea {
       height: 84px;
       resize: none;
+
       @media (max-width: 767px) {
         height: 70px;
       }
@@ -107,6 +113,7 @@
     &__footer {
       display: flex;
       margin-top: 40px;
+
       @media (max-width: 767px) {
         flex-direction: column;
         text-align: center;
@@ -116,6 +123,7 @@
     &__btn {
       min-width: 235px;
       margin-right: 40px;
+
       @media (max-width: 767px) {
         margin-right: 0;
         margin-bottom: 18px;
@@ -135,7 +143,6 @@
       }
     }
   }
-
 }
 
 .cta-contacts {
@@ -148,6 +155,11 @@
     max-width: 100%;
     margin-bottom: 83px;
     padding-top: 0;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -177,6 +189,10 @@
     color: $graphite;
     text-decoration: none;
     transition: all 0.3s ease;
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
 
     &:hover {
       color: $accent;
