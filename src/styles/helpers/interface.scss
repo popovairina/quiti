@@ -109,6 +109,14 @@
 
   &:hover::after {
     right: -3px;
+
+    @media (max-width: 921px) {
+      right: 74px;
+    }
+
+    @media (max-width: 767px) {
+      right: 84px;
+    }
   }
 }
 

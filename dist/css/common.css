@@ -3999,6 +3999,18 @@ a:hover {
     right: 80px;
   }
 
+  .link-arrow:hover::after {
+    right: 74px;
+  }
+
+  .card-service {
+    height: auto;
+  }
+
+  .card-service__desc {
+    margin-bottom: 20px;
+  }
+
   .card-service__btn-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4064,6 +4076,10 @@ a:hover {
     right: 90px;
   }
 
+  .link-arrow:hover::after {
+    right: 84px;
+  }
+
   .icon-feature-navy {
     width: 66px;
     height: 66px;
@@ -4092,6 +4108,14 @@ a:hover {
     width: 66px;
     height: 66px;
     background-image: url("data:image/svg+xml,%3Csvg width='66' height='66' viewBox='0 0 90 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M39.5773 1.99352C35.2644 -1.8792 28.3638 0.164736 26.8543 5.75865C25.7761 9.63136 22.0023 11.998 18.0129 11.3526C12.2983 10.3844 7.55412 15.8707 9.27927 21.3571C10.4653 25.1222 8.63234 29.2101 4.96639 30.8237C-0.316895 33.0828 -1.39512 40.2903 3.02559 43.9479C6.04461 46.5297 6.69154 50.9403 4.5351 54.2751C1.30044 59.116 4.31945 65.5705 10.034 66.3236C14.0234 66.8614 16.9346 70.1963 16.8268 74.1766C16.719 79.9856 22.757 83.8583 28.0403 81.3841C31.5984 79.6629 36.0192 80.9538 38.0678 84.2886C41.0868 89.2371 48.3109 89.2371 51.3299 84.2886C53.3785 80.8462 57.7992 79.6629 61.3574 81.3841C66.6406 83.8583 72.7865 79.9856 72.6787 74.1766C72.5709 70.1963 75.5899 66.7539 79.4715 66.3236C85.186 65.5705 88.2051 59.116 84.9704 54.2751C82.7061 50.9403 83.3531 46.5297 86.4799 43.9479C90.9006 40.1828 89.9302 33.0828 84.5391 30.8237C80.8732 29.2101 79.0402 25.1222 80.2262 21.3571C81.9514 15.8707 77.2072 10.3844 71.4926 11.3526C67.5032 11.998 63.7294 9.52379 62.6512 5.75865C61.1417 0.164736 54.2411 -1.8792 49.9282 1.99352C47.017 4.57532 42.4885 4.57532 39.5773 1.99352Z' fill='%2392CEE9'/%3E%3C/svg%3E%0A");
+  }
+
+  .decor-circle-blue {
+    display: none;
+  }
+
+  .decor-circle-yellow {
+    display: none;
   }
 
   .header {
@@ -4216,7 +4240,6 @@ a:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: auto;
   }
 
   .card-service_reversed {
@@ -4233,7 +4256,6 @@ a:hover {
   .card-service__desc {
     max-width: 100%;
     font-size: 14px;
-    margin-bottom: 20px;
   }
 
   .card-service__btn-wrap .link-arrow {
