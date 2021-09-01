@@ -1,5 +1,8 @@
 .safety-section {
   padding: 50px 0 70px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 27px;
+  }
 
   &__title {
     margin-bottom: 22px;
@@ -9,11 +12,19 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -16px;
+    @media screen and (max-width: 1023px) {
+      max-width: 400px;
+      margin: 0 auto;      
+    }
   }
 
   &__col-4 {
     width: calc(100% / 12 * 4 - 32px);
     margin: 0 16px;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      margin: 0 0 30px;
+    }
   }
 
   &__subtitle {
@@ -22,6 +33,13 @@
     line-height: 19px;
     font-family: $reg;
     color: $dark-gray;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 5px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__feature {
@@ -34,12 +52,23 @@
     &:last-child {
       margin-bottom: 0;
     }
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 30px;
+      max-width: 320px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 0;
+      padding-left: 60px;
+    }
   }
 
   &__icon {
     position: absolute;
     top: 5px;
     left: 1px;
+    @media screen and (max-width: 767px) {
+      top: 0;
+    }
   }
 
   &__heading {
@@ -49,6 +78,10 @@
     line-height: 21px;
     font-family: $add;
     color: $graphite;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__text {
@@ -57,5 +90,9 @@
     line-height: 17px;
     font-family: $reg;
     color: $dark-gray;
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 }

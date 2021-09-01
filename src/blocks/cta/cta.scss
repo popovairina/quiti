@@ -62,85 +62,88 @@
     }
   }
 
-  .cta-partnership {
-    padding: 58px 0 50px;
+}
+.cta-partnership {
+  padding: 58px 0 50px;
 
-    .cta-contacts {
-      padding-top: 8px;
+  .cta-contacts {
+    padding-top: 8px;
+    @media screen and (max-width: 1023px) {
+      padding-top: 80px;
+    }
+  }
+}
+
+.cta-form {
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: $reg;
+    color: $dark-gray;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #aaaaaa;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: $accent;
+    }
+
+    &::placeholder {
+      color: $dark-gray;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 23px;
     }
   }
 
-  .cta-form {
-    &__input {
-      display: block;
-      width: 100%;
-      margin-bottom: 30px;
-      padding: 10px 0;
+  &__textarea {
+    height: 84px;
+    resize: none;
 
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 1.3;
-      font-family: $reg;
-      color: $dark-gray;
-      background: transparent;
-      border: 0;
-      border-bottom: 1px solid #aaaaaa;
-      outline: none;
-      transition: all 0.3s ease;
-
-      &:focus {
-        border-color: $accent;
-      }
-
-      &::placeholder {
-        color: $dark-gray;
-      }
-
-      @media (max-width: 767px) {
-        margin-bottom: 23px;
-      }
+    @media (max-width: 767px) {
+      height: 70px;
     }
+  }
 
-    &__textarea {
-      height: 84px;
-      resize: none;
+  &__footer {
+    display: flex;
+    margin-top: 40px;
 
-      @media (max-width: 767px) {
-        height: 70px;
-      }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
     }
+  }
 
-    &__footer {
-      display: flex;
-      margin-top: 40px;
+  &__btn {
+    min-width: 235px;
+    margin-right: 40px;
 
-      @media (max-width: 767px) {
-        flex-direction: column;
-        text-align: center;
-      }
+    @media (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 18px;
     }
+  }
 
-    &__btn {
-      min-width: 235px;
-      margin-right: 40px;
+  &__agreement {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: $reg;
+    color: #737373;
 
-      @media (max-width: 767px) {
-        margin-right: 0;
-        margin-bottom: 18px;
-      }
-    }
-
-    &__agreement {
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 15px;
-      font-family: $reg;
+    a {
       color: #737373;
-
-      a {
-        color: #737373;
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
   }
 }

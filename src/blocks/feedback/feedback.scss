@@ -152,18 +152,21 @@
         &:nth-child(2n-1) {
             background-color: $light-gray;
         }
+        @media screen and (max-width: 767px) {
+            padding-right: 15px;
+        }
     }
 }
 
 .feedback-form {
     .cta__title, .cta-form__agreement, .cta-form__agreement a {
-        color: #fff;
+        color: #fff !important;
     }
     .cta-form__input {
-        color: #fff;
+        color: #fff !important;
         border-color: #fff !important;
         &::placeholder {
-            color: #fff;
+            color: #fff !important;
         }
     }
 }
@@ -183,5 +186,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        width: 100%;
+        height: 100%;
     }
 }

@@ -1,5 +1,5 @@
 .partners {
-    padding: 62px 80px;
+    padding: 62px 0 80px;
     &__title {
         text-align: left;
         margin-bottom: 52px;
@@ -7,6 +7,23 @@
     &__wrap {
         display: flex;
         align-items: center;
-        justify-content: space-around
+        justify-content: space-around;
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 767px) {
+            margin-bottom: -30px;
+        }
+    }
+    &__img {
+        @media screen and (max-width: 1023px) {
+            width: 20%;
+            margin-right: 10px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 40%;
+            margin-bottom: 30px;
+        }
     }
 }

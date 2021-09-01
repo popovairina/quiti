@@ -63,6 +63,10 @@
 
 .calc {
   padding: 80px 0 86px;
+  @media screen and (max-width: 767px) {
+    padding-top: 58px;
+    padding-bottom: 64px;
+  }
 
   &__title {
     margin-bottom: 5px;
@@ -71,6 +75,10 @@
   &__subtitle {
     max-width: 774px;
     margin: 0 auto 47px;
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
 
   &__submit {
@@ -85,6 +93,9 @@
 
   &__input-group {
     margin-bottom: 26px !important;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px !important;
+    }
 
     .input-group {
       overflow: hidden;
@@ -133,6 +144,9 @@
     margin-bottom: 35px;
     background: #f7f7f7;
     border-radius: 10px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 31px;
+    }
 
     input {
       position: absolute;
@@ -154,6 +168,12 @@
       color: $graphite;
       font-style: normal;
       cursor: pointer;
+      @media screen and (max-width: 767px) {
+        padding: 12px 47px;
+      }
+      @media screen and (max-width: 374px) {
+        padding: 12px 35px;
+      }
 
       span {
         position: relative;
@@ -195,6 +215,9 @@
     align-items: center;
     margin-top: 17px;
     margin-bottom: 4px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
 
     &-title {
       margin-right: 18px;
@@ -202,6 +225,9 @@
       font-size: 18px;
       font-family: $reg;
       color: $dark-gray;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
     }
 
     &-number {
@@ -209,6 +235,11 @@
       font-size: 26px;
       font-family: $reg;
       color: $graphite;
+      @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 

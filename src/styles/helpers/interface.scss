@@ -176,6 +176,12 @@
       border-color: #e8acb9;
     }
   }
+  &_blue {
+    .swiper-pagination-bullet-active {
+      background: #36BCBB;
+      border-color: #36BCBB;
+    }    
+  }
 }
 
 
