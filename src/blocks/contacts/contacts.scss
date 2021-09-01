@@ -1,6 +1,10 @@
 .contacts {
   padding-top: 98px;
 
+  @media (max-width: 1024px) {
+    padding-top: 45px;
+  }
+
   &-container {
     max-width: 1140px;
     margin: auto;
@@ -9,6 +13,10 @@
 
   &-title {
     margin-bottom: 85px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -28,6 +36,10 @@
     padding: 38px 68px 44px 30px;
     background-color: $white;
 
+    @media (max-width: 1024px) {
+      position: static;
+    }
+
     &__title {
       width: 344px;
       margin-bottom: 30px;
@@ -37,6 +49,17 @@
       font-family: $add;
       color: $navy;
       font-style: normal;
+
+      @media (max-width: 1023px) {
+        width: auto;
+        font-size: 34px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 26px;
+        line-height: 30px;
+      }
     }
 
     &__subtitle {
@@ -57,6 +80,16 @@
       font-family: $reg;
       color: $graphite;
       font-style: normal;
+
+      @media (max-width: 1023px) {
+        width: auto;
+      }
+      
+      @media (max-width: 767px) {
+        width: auto;
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
   }
 }
