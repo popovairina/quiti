@@ -12,6 +12,9 @@
   &__text {
     max-width: 800px;
     margin: 0 auto 30px;
+    @media (max-width: 1023px) {
+      max-width: 650px;
+    }
 
     @media (max-width: 767px) {
       margin-bottom: 45px;
@@ -25,12 +28,35 @@
       position: absolute;
       top: 15px;
       left: calc(50% - 510px);
+      @media (max-width: 1023px) {
+        width: 42px;
+        height: 42px;
+        left: calc(50% - 340px);
+      }
+      @media (max-width: 767px) {
+        left: calc(50% - 167px);
+      }
+      @media (max-width: 374px) {
+        left: calc(50% - 156px);
+      }
     }
 
     .decor-light-yellow {
       position: absolute;
       right: calc(50% - 474px);
       bottom: 84px;
+      @media (max-width: 1023px) {
+        width: 28px;
+        height: 43px;
+        right: calc(50% - 374px);
+      }
+      @media (max-width: 767px) {
+        right: calc(50% - 169px);
+        bottom: 129px;
+      }
+      @media (max-width: 374px) {
+        right: calc(50% - 156px);
+      }
     }
   }
 }

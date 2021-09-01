@@ -2,7 +2,7 @@
   padding: 80px 0 105px;
 
   @media (max-width: 767px) {
-    padding: 45px 0 65px;
+    padding: 53px 0 50px;
   }
 
   &__wrap {
@@ -91,11 +91,17 @@
       &::placeholder {
         color: $dark-gray;
       }
+      @media (max-width: 767px) {
+        margin-bottom: 23px;
+      }
     }
 
     &__textarea {
       height: 84px;
       resize: none;
+      @media (max-width: 767px) {
+        height: 70px;
+      }
     }
 
     &__footer {
@@ -130,58 +136,59 @@
     }
   }
 
-  .cta-contacts {
-    padding-top: 100px;
+}
 
-    &_flex {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 83px;
-      padding-top: 0;
+.cta-contacts {
+  padding-top: 100px;
+
+  &_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 83px;
+    padding-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__row {
+    margin-bottom: 32px;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $reg;
+    color: $dark-gray;
+  }
+
+  &__link {
+    margin-right: 30px;
+
+    font-weight: bold;
+    font-size: 26px;
+    font-family: $reg;
+    color: $graphite;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $accent;
     }
+  }
 
-    &__title {
-      margin-bottom: 32px;
-    }
+  &__small {
+    margin-top: 10px;
 
-    &__row {
-      margin-bottom: 32px;
-    }
-
-    &__heading {
-      margin-bottom: 10px;
-
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      font-family: $reg;
-      color: $dark-gray;
-    }
-
-    &__link {
-      margin-right: 30px;
-
-      font-weight: bold;
-      font-size: 26px;
-      font-family: $reg;
-      color: $graphite;
-      text-decoration: none;
-      transition: all 0.3s ease;
-
-      &:hover {
-        color: $accent;
-      }
-    }
-
-    &__small {
-      margin-top: 10px;
-
-      font-weight: normal;
-      font-size: 14px;
-      font-family: $reg;
-      color: $graphite;
-    }
+    font-weight: normal;
+    font-size: 14px;
+    font-family: $reg;
+    color: $graphite;
   }
 }

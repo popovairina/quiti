@@ -43,12 +43,17 @@ ol {
   padding: 0;
   list-style-type: none;
 }
-
+main {
+  padding-top: 79px;
+  @media (max-width: 767px) {
+    padding-top: 69px;
+  }
+}
 main.page {
-  padding-top: 82px;
+  padding-top: 160px;
   padding-bottom: 106px;
   @media (max-width: 767px) {
-    padding-top: 35px;
+    padding-top: 107px;
     padding-bottom: 70px;
   }
 }
@@ -101,6 +106,10 @@ h2 {
   line-height: 45px;
   font-family: $add;
   color: $graphite;
+  @media (max-width: 1199px) {
+    font-size: 30px;
+    line-height: 38px;
+  }
   @media (max-width: 767px) {
     font-size: 24px;
     line-height: 28px;
@@ -146,7 +155,7 @@ a {
 }
 
 .bg-light-gray {
-  background-color: #f3f4f6;
+  background-color: #f3f4f6 !important;
 }
 
 .section {
@@ -165,9 +174,9 @@ a {
   font-family: $reg;
   text-align: center;
   color: #3c3c3c;
-
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -176,4 +185,8 @@ a {
   font-size: 32px;
   line-height: 38px;
   font-family: $add;
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
