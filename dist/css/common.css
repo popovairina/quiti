@@ -4092,11 +4092,13 @@ a:hover {
 
   h1,
   .page-title {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .section-title {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   h2 {
@@ -4111,6 +4113,10 @@ a:hover {
 
   .text-26 {
     font-size: 20px;
+  }
+
+  .btn-wrap {
+    text-align: center;
   }
 
   .container {
@@ -4594,6 +4600,11 @@ a:hover {
     flex-direction: column;
   }
 
+  .reasons-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
   .reasons-list__item {
     font-size: 14px;
   }
@@ -4608,6 +4619,8 @@ a:hover {
 
   .features-services__text {
     width: 238px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .features-services-cost {
@@ -4625,20 +4638,28 @@ a:hover {
   }
 
   .albums-descr {
+    width: auto;
     margin-right: 0;
   }
 
   .albums-title {
     margin-bottom: 30px;
     font-size: 28px;
+    line-height: 32px;
   }
 
   .albums-preview {
+    width: auto;
     margin-bottom: 40px;
   }
 
   .albums-list__item {
     width: auto;
+  }
+
+  .albums-list__text {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .pricelist-table-wrap {
@@ -4672,6 +4693,8 @@ a:hover {
 
   .lab-text {
     width: auto;
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 30px;
   }
 
@@ -4789,13 +4812,6 @@ a:hover {
 
   .hero__btn-wrap .btn {
     width: auto;
-  }
-}
-
-@media (max-width: 575px) {
-  h1,
-  .page-title {
-    font-size: 24px;
   }
 }
 /*# sourceMappingURL=maps/common.css.map */

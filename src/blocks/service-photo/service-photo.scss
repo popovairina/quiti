@@ -37,6 +37,11 @@
     line-height: 39px;
     font-family: $reg;
     color: $navy;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &-list {
@@ -118,6 +123,8 @@
     color: #000000;
     @media (max-width: 767px) {
       width: 238px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -171,6 +178,7 @@
       margin-right: 20px;
     }
     @media (max-width: 767px) {
+      width: auto;
       margin-right: 0;
     }
   }
@@ -186,6 +194,7 @@
     @media (max-width: 767px) {
       margin-bottom: 30px;
       font-size: 28px;
+      line-height: 32px;
     }
   }
 
@@ -198,6 +207,7 @@
     }
   
     @media (max-width: 767px) {
+      width: auto;
       margin-bottom: 40px;
     }
   }
@@ -225,6 +235,11 @@
       line-height: 130%;
       font-family: $reg;
       color: $graphite;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -370,6 +385,8 @@
   
     @media (max-width: 767px) {
       width: auto;
+      font-size: 14px;
+      line-height: 16px;
       margin-bottom: 30px;
 
       &:last-child {
