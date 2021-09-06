@@ -4,11 +4,17 @@
         position: absolute;
         top: 43%;
         left: -125px;
+        @media (max-width: 1199px) {
+            display: none;
+        }
     }
     .decor-circle-yellow {
         position: absolute;
         top: 72%;
         right: -60px;
+        @media (max-width: 1199px) {
+            display: none;
+        }
     }
 }
 .card-service {
@@ -86,6 +92,10 @@
             display: flex;
             flex-direction: column-reverse;
         }
+        @media (max-width: 767px) {
+            width: 100%;
+            align-items: flex-start;
+        }
 
         .link-arrow {
             @media (max-width: 921px) {
@@ -98,9 +108,12 @@
 
         .btn {
             margin-right: 20px;
-
             @media (max-width: 921px) {
                 margin-right: 0;
+            }
+            @media (max-width: 767px) {
+                align-self: center;
+                max-width: 270px;
             }
         }
     }

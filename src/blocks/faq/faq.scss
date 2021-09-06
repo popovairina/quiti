@@ -27,6 +27,12 @@
             margin-bottom: 37px;
         }
     }
+    .btn {
+        @media (max-width: 767px) {
+            max-width: 250px;
+            padding: 20px 18px;
+        }
+    }
 }
 
 .faq-main {
@@ -74,8 +80,15 @@
         }
 
         @media (max-width: 767px) {
-            padding: 20px 20% 20px 0;
+            padding: 27px 30px 29px 0;
             font-size: 16px;
+            &::after {
+                width: 20px;
+                height: 11px;
+                top: calc(50% - 5px);
+                right: 0px;
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='13' viewBox='0 0 22 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 1L11 12L0.999999 1' stroke='%2336BCBB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
         }
     }
     &__content {
@@ -91,7 +104,8 @@
         transition: all .5s ease;
 
         @media (max-width: 767px) {
-            font-size: 14px;
+            font-size: 16px;
+            line-height: 20.8px;
         }
     }
     &__item[data-open] {

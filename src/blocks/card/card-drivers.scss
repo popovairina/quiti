@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 362px;
   height: auto;
   padding: 29px 41px;
   text-align: center;
@@ -53,6 +52,9 @@
 
   &__feedback {
     margin-bottom: 44px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__link {

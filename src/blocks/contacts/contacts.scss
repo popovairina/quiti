@@ -22,12 +22,14 @@
 
 .map {
   position: relative;
+
   &__wrap {
     position: relative;
-    overflow: hidden; 
     display: flex;
-    background-color: #ccc;
+    overflow: hidden;
+    background-color: #cccccc;
   }
+
   &-info {
     position: absolute;
     top: 20%;
@@ -84,7 +86,7 @@
       @media (max-width: 1023px) {
         width: auto;
       }
-      
+
       @media (max-width: 767px) {
         width: auto;
         font-size: 18px;

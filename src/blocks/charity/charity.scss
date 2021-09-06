@@ -3,7 +3,7 @@
     &__wrap {
         display: flex;
         align-items: flex-start;
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -12,9 +12,9 @@
     &__logo {
         flex-shrink: 0;
         margin-right: 70px;
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             margin-right: 0;
-            margin-bottom: 35px;
+            margin-bottom: 28px;
         }
     }
     &__body {
@@ -29,24 +29,33 @@
         font-size: 14px;
         line-height: 17px;
         color: $dark-gray;
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             margin: auto;
             margin-bottom: 17px;
         }
     }
     &__title {
         margin-bottom: 41px;
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             margin-bottom: 35px;
         }
     }
     &__btn {
         margin-right: 53px;
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             display: block;
             width: 100%;
+            max-width: 340px !important;
             margin: auto;
             margin-bottom: 35px;
+        }
+    }
+    .link-arrow {
+        @media (max-width: 1023px) {
+            font-size: 18px;
+        }
+        @media (max-width: 374px) {
+            font-size: 16px;
         }
     }
 }

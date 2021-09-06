@@ -6,11 +6,17 @@
   padding-top: 75px;
   padding-bottom: 50px;
   background-color: $light-gray;
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
 
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1023px) {
+      align-items: flex-start;
+    }
     @media (max-width: 767px) {
       flex-direction: column;
     }
@@ -28,6 +34,9 @@
   &-descr {
     flex-basis: 50%;
     padding-top: 14px;
+    @media (max-width: 767px) {
+      padding-top: 24px;
+    }
   }
 
   &-title {
@@ -37,10 +46,8 @@
     line-height: 39px;
     font-family: $reg;
     color: $navy;
-
     @media (max-width: 767px) {
-      font-size: 24px;
-      line-height: 28px;
+      margin-bottom: 31px;
     }
   }
 
@@ -57,6 +64,7 @@
       font-family: $reg;
       color: $graphite;
       @media (max-width: 767px) {
+        margin-bottom: 27px;
         font-size: 14px;
       }
     }
@@ -68,6 +76,9 @@
   padding-top: 56px;
   padding-bottom: 50px;
   background-color: $white;
+  @media (max-width: 767px) {
+    padding-bottom: 35px;
+  }
 
   &-container {
     width: 100%;
@@ -124,7 +135,7 @@
     @media (max-width: 767px) {
       width: 238px;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 20.8px;
     }
   }
 
@@ -148,6 +159,12 @@
 
   &-btn {
     text-align: center;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+    &_rides {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -155,6 +172,9 @@
   padding-top: 80px;
   padding-bottom: 81px;
   background-color: $light-gray;
+  @media (max-width: 767px) {
+    padding-top: 28px;
+  }
 
   &-container {
     display: flex;
@@ -180,6 +200,7 @@
     @media (max-width: 767px) {
       width: auto;
       margin-right: 0;
+      width: 100%;
     }
   }
 
@@ -190,11 +211,19 @@
     line-height: 61px;
     font-family: $add;
     color: $graphite;
+    @media (max-width: 1199px) {
+      font-size: 38px;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
   
     @media (max-width: 767px) {
-      margin-bottom: 30px;
       font-size: 28px;
-      line-height: 32px;
+      margin-bottom: 25px;
+    }
+  
+    @media (max-width: 575px) {
+      font-size: 24px;
     }
   }
 
@@ -207,8 +236,8 @@
     }
   
     @media (max-width: 767px) {
-      width: auto;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
+      width: 100%;
     }
   }
 
@@ -289,10 +318,16 @@
     .td-small {
       padding: 20px 25px;
       text-align: center;
+      @media (max-width: 1023px) {
+        padding: 12px 25px;
+      }
     }
 
     td {
       padding: 20px 0 20px 25px;
+      @media (max-width: 1023px) {
+        padding: 12px 0 12px 25px;
+      }
 
       .td {
         &-title {
@@ -301,6 +336,9 @@
           line-height: 22px;
           font-family: $reg;
           color: $graphite;
+          @media (max-width: 1023px) {
+            font-size: 14px;
+          }
         }
 
         &-text {
@@ -309,6 +347,9 @@
           line-height: 22px;
           font-family: $reg;
           color: $graphite;
+          @media (max-width: 1023px) {
+            font-size: 14px;
+          }
         }
 
         &-marked {
@@ -327,6 +368,11 @@
 
   &-btn {
     text-align: center;
+    .btn {
+      max-width: 270px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -347,11 +393,15 @@
   }
 
   &-descr {
-    flex-basis: 50%;
+    width: 50%;
     margin-right: 52px;
   
+    @media (max-width: 1023px) {
+      margin-right: 20px;
+    }
     @media (max-width: 767px) {
       margin-right: 0;
+      width: 100%;
     }
   }
 
@@ -362,16 +412,24 @@
     line-height: 61px;
     font-family: $add;
     color: $graphite;
-    
+    @media (max-width: 1199px) {
+      font-size: 38px;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
+  
     @media (max-width: 767px) {
-      margin-bottom: 20px;
       font-size: 28px;
-      line-height: 32px;
+      margin-bottom: 25px;
+    }
+  
+    @media (max-width: 575px) {
+      font-size: 24px;
     }
   }
 
   &-text {
-    width: 460px;
+    max-width: 460px;
     margin-bottom: 50px;
     font-weight: 400;
     font-size: 16px;
@@ -396,10 +454,14 @@
   }
 
   &-preview {
-    flex-basis: 38%;
+    width: 38%;
   
+    @media (max-width: 1023px) {
+      width: 50%;
+    }
     @media (max-width: 767px) {
       margin-bottom: 36px;
+      width: 100%;
     }
   }
 }

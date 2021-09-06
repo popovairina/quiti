@@ -34,6 +34,9 @@
     padding: 20px 30px;
     font-size: 16px;
   }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .btn-blue {
@@ -81,7 +84,7 @@
   color: $dark-gray;
   text-decoration: none;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     font-size: 16px;
   }
 
@@ -97,26 +100,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: all 0.3s ease;
-
-    @media (max-width: 921px) {
-      right: 80px;
-    }
-
-    @media (max-width: 767px) {
-      right: 90px;
-    }
   }
 
   &:hover::after {
     right: -3px;
-
-    @media (max-width: 921px) {
-      right: 74px;
-    }
-
-    @media (max-width: 767px) {
-      right: 84px;
-    }
   }
 }
 
@@ -188,6 +175,12 @@
       background: #e8acb9;
       border-color: #e8acb9;
     }
+  }
+  &_blue {
+    .swiper-pagination-bullet-active {
+      background: #36BCBB;
+      border-color: #36BCBB;
+    }    
   }
 }
 
