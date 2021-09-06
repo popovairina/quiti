@@ -1940,7 +1940,7 @@ a:hover {
 }
 
 .lightbox {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1967,15 +1967,18 @@ a:hover {
   text-align: center;
 }
 
-.lightbox-content .close-lightbox-window {
-  color: #aaa;
+.lightbox-content .close-lightbox {
+  position: absolute;
+  top: 17px;
+  right: 19px;
+  color: #6D6D6D;
   float: right;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.lightbox-content .close-lightbox-window:hover {
+.lightbox-content .close-lightbox:hover {
   color: #ff0000;
 }
 
@@ -1996,6 +1999,13 @@ a:hover {
   left: 107px;
 }
 
+.lightbox-content_request {
+  position: relative;
+  max-width: 637px !important;
+  width: 100%;
+  padding: 60px 118px 76px;
+}
+
 .lightbox-thanks__title {
   margin-bottom: 39px;
 }
@@ -2008,6 +2018,114 @@ a:hover {
   line-height: 22px;
   text-align: center;
   color: #6D6D6D;
+}
+
+.lightbox-request__title {
+  margin-bottom: 33px;
+}
+
+.lightbox-request__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.lightbox-request__inputs .request-input {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 14px 19px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #6D6D6D;
+}
+
+.lightbox-request__inputs textarea {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #6D6D6D;
+}
+
+.lightbox-request__radiobuttons {
+  text-align: left;
+  margin-bottom: 46px;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3C3C3C;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-block .radiobutton-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-block label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3C3C3C;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-block input {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #3C3C3C;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.lightbox-request__radiobuttons .radiobuttons-block input:first-child {
+  margin-left: 0;
+}
+
+.lightbox-request__btn {
+  width: 100%;
+  margin-right: 0 !important;
+  margin-bottom: 14px;
 }
 
 @-webkit-keyframes showPopup {
@@ -5649,7 +5767,19 @@ a:hover {
     left: 45px;
   }
 
+  .lightbox-content_request {
+    padding: 30px 15px 40px;
+  }
+
   .lightbox-thanks__subtitle {
+    font-size: 14px;
+  }
+
+  .lightbox-request__inputs .request-input {
+    font-size: 14px;
+  }
+
+  .lightbox-request__inputs textarea {
     font-size: 14px;
   }
 }
@@ -5667,6 +5797,26 @@ a:hover {
 @media (max-width: 500px) {
   .lightbox-content {
     margin: 50% auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .lightbox-request__radiobuttons {
+    margin-bottom: 31px;
+  }
+
+  .lightbox-request__radiobuttons .radiobuttons-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .lightbox-request__radiobuttons .radiobuttons-block .radiobutton-wrap {
+    margin-bottom: 15px;
   }
 }
 
