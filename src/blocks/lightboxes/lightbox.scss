@@ -1,0 +1,241 @@
+.lightbox {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+  padding: 0 15px 0 15px;
+  animation-duration: 0.3s;
+  animation-name: showPopup;
+
+  &-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 560px;
+    z-index: 9999;
+    text-align: center;
+
+    @media (max-width: 1600px) {
+      margin: 20% auto;
+    }
+
+    @media (max-width: 1000px) {
+      margin: 30% auto;
+    }
+
+    @media (max-width: 700px) {
+      margin: 40% auto;
+    }
+
+    @media (max-width: 500px) {
+      margin: 50% auto;
+    }
+
+    .close-lightbox {
+      position: absolute;
+      top: 17px;
+      right: 19px;
+      color: $dark-gray;
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-lightbox:hover {
+      color: #ff0000;
+    }
+
+    &_thanks {
+      position: relative;
+      padding: 132px 62px 79px;
+
+      @media (max-width: 601px) {
+        padding: 132px 15px 79px;
+      }
+
+      .decor-light-rose {
+        position: absolute;
+        top: 85px;
+        right: 100px;
+
+        @media (max-width: 601px) {
+          top: 75px;
+          right: 35px;
+        }
+      }
+
+      .decor-star-yellow {
+        position: absolute;
+        top: 80px;
+        left: 107px;
+
+        @media (max-width: 601px) {
+          top: 65px;
+          left: 45px;
+        }
+      }
+    }
+
+    &_request {
+      position: relative;
+      max-width: 637px !important;
+      width: 100%;
+      padding: 60px 118px 76px;
+
+      @media (max-width: 601px) {
+        padding: 30px 15px 40px;
+      }
+    }
+  }
+
+  &-thanks__title {
+    margin-bottom: 39px;
+  }
+
+  &-thanks__subtitle {
+    font-family: $reg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $dark-gray;
+
+    @media (max-width: 601px) {
+      font-size: 14px;
+    }
+  }
+
+  &-request {
+    &__title {
+      margin-bottom: 33px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      .request-input {
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 14px 19px;
+        margin-bottom: 20px;
+
+        font-family: $reg;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $dark-gray;
+
+        @media (max-width: 601px) {
+          font-size: 14px;
+        }
+      }
+
+      textarea {
+        font-family: $reg;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $dark-gray;
+
+        @media (max-width: 601px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__radiobuttons {
+      text-align: left;
+      margin-bottom: 46px;
+
+      @media (max-width: 430px) {
+        margin-bottom: 31px;
+      }
+
+      .radiobuttons {
+        &-title {
+          font-family: $reg;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $graphite;
+        }
+        
+        &-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 25px;
+
+          @media (max-width: 430px) {
+            flex-direction: column;
+            align-items: start;
+          }
+
+          .radiobutton-wrap {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 430px) {
+              margin-bottom: 15px;
+            }
+          }
+
+          label {
+            font-family: $reg;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $graphite;
+          }
+
+          input {
+            width: 19px;
+            height: 19px;
+            border: 1px solid $graphite;
+            border-radius: 0;
+            box-sizing: border-box;
+            margin: 0;
+            margin-right: 10px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      margin-right: 0 !important;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@keyframes showPopup {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

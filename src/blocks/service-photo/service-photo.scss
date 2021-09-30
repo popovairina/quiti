@@ -198,6 +198,7 @@
       margin-right: 20px;
     }
     @media (max-width: 767px) {
+      width: auto;
       margin-right: 0;
       width: 100%;
     }
@@ -263,6 +264,11 @@
       line-height: 130%;
       font-family: $reg;
       color: $graphite;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -437,6 +443,8 @@
   
     @media (max-width: 767px) {
       width: auto;
+      font-size: 14px;
+      line-height: 16px;
       margin-bottom: 30px;
 
       &:last-child {
